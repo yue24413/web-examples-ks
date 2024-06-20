@@ -27,6 +27,7 @@ body {
 
 .container {
     max-width: 1430px;
+    min-width: 400px;
     width: 90%;
 }
 
@@ -169,14 +170,8 @@ body {
     z-index: 1;
 }
 
-
-
-
-
-
 .wc-menu {
 }
-
     .wc-menu ul {
         /*转化为table 并且，宽度百分百，*/
         display: table;
