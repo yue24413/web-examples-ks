@@ -1,13 +1,1144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="renderer" content="webkit">
+    <title>首页 - 东北林业大学软件工程专业</title>
+    <meta name="keywords" content="东北林业大学软件工程专业" />
+    <meta name="description" content="东北林业大学软件工程专业" />
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+    <link href="Assets/css/web/swiper.min.css" rel="stylesheet" />
+    <link href="Assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Assets/css/web/animated-border.min.css" rel="stylesheet" />
+    <link href="Assets/css/web/animate.css" rel="stylesheet" />
+
+    <link href="Assets/css/web/vendors.css" rel="stylesheet" />
+    <link href="Assets/css/web/style.css" rel="stylesheet" />
+    <link href="Assets/css/web/iconfont.css" rel="stylesheet" />
+
+    <link href="Assets/css/web/common.css?" rel="stylesheet" />
+    <link href="Assets/css/web/index.css?" rel="stylesheet" />
+
+    <link href="Assets/css/web/webpager.css" rel="stylesheet" />
+
+
+
+    <!-- jQuery -->
+
+<!--<script>-->
+<!--var _hmt = _hmt || [];-->
+<!--(function() {-->
+<!--  var hm = document.createElement("script");-->
+<!--  hm.src = "https://hm.baidu.com/hm.js?3f85061cc4512ce96b403c88900f5fca";-->
+<!--  var s = document.getElementsByTagName("script")[0];-->
+<!--  s.parentNode.insertBefore(hm, s);-->
+<!--})();-->
+<!--</script>-->
+
 </head>
+
 <body>
-<div>
-    <h1>hello</h1>
-    <a href="b.html">hh</a>
+    <div class="box">
+        <div class="search-box hidden-xs hidden-sm hidden-md">
+            <div class="container">
+                <h2>搜索</h2>
+                <div class="search-form">
+                    <input type="text" name="Search" class="form-text" placeholder="输入关键词..." id="search-input" autocomplete="off">
+                    <button type="button" class="form-submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="close">
+                    关闭<i class="iconfont icon-close"> </i>
+                </div>
+            </div>
+        </div>
+        <!-- nav导航开始 -->
+        <nav class="header navbar navbar-default visible-xs visible-sm visible-md ">
+            <!--大屏头部-->
+            <div class="navbar-header ">
+                <div class="container">
+                    <div class="row">
+                        <a href="/" class=" logo1">
+                            <img src="Assets/images/logodouble.png" id="img" class="img-responsive">
+                        </a>
+                        <a href="#mnmd-offcanvas-mobile" class="offcanvas-menu-toggle mobile-header-btn js-mnmd-offcanvas-toggle">
+                            <i class="iconfont icon-wangzhandaohang mdicon--last hidden-xs"></i>
+                            <i class="iconfont icon-wangzhandaohang visible-xs-inline-block"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!--手机版-->
+        <div id="mnmd-offcanvas-mobile" class="mnmd-offcanvas js-mnmd-offcanvas js-perfect-scrollbar">
+            <div class="mnmd-offcanvas__title">
+                <h2 class="site-logo">
+                    <a href="/">
+                        <img src="Assets/images/logodouble.png" alt="">
+                    </a>
+                </h2>
+                <ul class="social-list list-horizontal">
+                </ul>
+                <a href="#mnmd-offcanvas-mobile" class="mnmd-offcanvas-close js-mnmd-offcanvas-close" aria-label="Close"><span aria-hidden="true">&#10005;</span></a>
+            </div>
+
+            <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
+                <div id="offcanvas-menu" class="menu-main-menu-container">
+
+<ul class="navigation navigation--offcanvas">
+        <li class="menu-item"><a href="/" aria-current="page">首页</a></li>
+        <li class="menu-item menu-item-has-children ">
+            <a href="/Data/List/welcome" target="_self">
+                专业概况
+            </a>
+
+                <ul class="sub-menu" style="display: block;">
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/welcome">
+                                欢迎辞
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/about-se">
+                                专业简介
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/leadership">
+                                专业领导
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/administrator">
+                                机构设置
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/Previous-leaders">
+                                历任领导
+                            </a>
+                        </li>
+                </ul>
+        </li>
+        <li class="menu-item menu-item-has-children ">
+            <a href="/Data/List/jcrc" target="_self">
+                师资队伍
+            </a>
+
+                <ul class="sub-menu" style="display: block;">
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/jcrc">
+                                杰出人才
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/qncj">
+                                青年人才
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/people">
+                                教师名录
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/bsh">
+                                博士后
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/txjs">
+                                荣退教师
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/rczp">
+                                人才招聘
+                            </a>
+                        </li>
+                </ul>
+        </li>
+        <li class="menu-item menu-item-has-children ">
+            <a href="/Data/List/about-research" target="_self">
+                科学研究
+            </a>
+
+                <ul class="sub-menu" style="display: block;">
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/about-research">
+                                科研概况
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/yjfx">
+                                研究方向
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/research-kyjd">
+                                科研基地
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/kycg">
+                                科研成果
+                            </a>
+                        </li>
+                </ul>
+        </li>
+        <li class="menu-item menu-item-has-children ">
+            <a href="/Data/List/zyjs" target="_self">
+                人才培养
+            </a>
+
+                <ul class="sub-menu" style="display: block;">
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/zyjs">
+                                本科生培养
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/yjs">
+                                研究生培养
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/jxhj1">
+                                教学获奖
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/jxjd1">
+                                教学基地
+                            </a>
+                        </li>
+                </ul>
+        </li>
+        <li class="menu-item menu-item-has-children ">
+            <a href="/Data/List/xyzx" target="_self">
+                校友会
+            </a>
+
+                <ul class="sub-menu" style="display: block;">
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/xyzx">
+                                校友资讯
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/xyfw">
+                                校友服务
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/xyfc1">
+                                校友风采
+                            </a>
+                        </li>
+                </ul>
+        </li>
+        <li class="menu-item menu-item-has-children ">
+            <a href="/Data/List/about-party" target="_self">
+                党建工作
+            </a>
+
+                <ul class="sub-menu" style="display: block;">
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/about-party">
+                                党总支概况
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/zbfc">
+                                支部风采
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a target="_self" href="/Data/List/activity">
+                                党建活动
+                            </a>
+                        </li>
+                </ul>
+        </li>
+        <li class="menu-item  ">
+            <a href="/Data/List/Contact" target="_self">
+                联系我们
+            </a>
+
+        </li>
+</ul>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!--手机版 end-->
+
+
+
+<div class="bg1">
+    <div class="topp hidden-xs hidden-sm hidden-md">
+        <div class="container container2">
+            <div class="row">
+                <div class="logo col-lg-5 col-md-5  animated  fadeInLeft">
+                    <a href="/"><img src="Assets/images/logodouble.png" /></a>
+                </div>
+                <div class="top-tright text-right  col-lg-7 col-md-7 pos animated fadeInRight">
+                    <div class="top-trtop">
+                        <a class="search-btn "><img src="Assets/images/search.png" /></a>
+                    </div>
+                    <!--top-trtop end-->
+                    <div class="wc-menu ">
+
+<ul>
+        <li>
+            <a href="/">首页</a>
+        </li>
+            <li>
+            <a data-id="" target="_self" href="/Data/List/welcome" data-url="">专业概况</a>
+
+                <div class="ernav" cut="13em">
+                    <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
+                    <ul>
+                            <li>
+                                <a target="_self" href="/Data/List/welcome" data-url="">欢迎辞</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/about-se" data-url="">专业简介</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/leadership" data-url="">专业领导</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/administrator" data-url="">机构设置</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/Previous-leaders" data-url="">历任领导</a>
+                            </li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+            <a target="_self" href="/Data/List/jcrc" data-url="">师资队伍</a>
+
+                <div class="ernav" cut="13em">
+                    <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
+                    <ul>
+                            <li>
+                                <a target="_self" href="/Data/List/jcrc" data-url="">杰出人才</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/qncj" data-url="">青年人才</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/people" data-url="">教师名录</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/bsh" data-url="">博士后</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/txjs" data-url="">荣退教师</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/rczp" data-url="">人才招聘</a>
+                            </li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+            <a target="_self" href="/Data/List/about-research" data-url="">科学研究</a>
+
+                <div class="ernav" cut="13em">
+                    <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
+                    <ul>
+                            <li>
+                                <a target="_self" href="/Data/List/about-research" data-url="">科研概况</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/yjfx" data-url="">研究方向</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/research-kyjd" data-url="">科研基地</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/kycg" data-url="">科研成果</a>
+                            </li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+            <a target="_self" href="/Data/List/zyjs" data-url="">人才培养</a>
+
+                <div class="ernav" cut="13em">
+                    <img src="Assets/userfiles/images/rc-1.jpg" cut="13em" />
+                    <ul>
+                            <li>
+                                <a target="_self" href="/Data/List/zyjs" data-url="">本科生培养</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/yjs" data-url="">研究生培养</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/jxhj1" data-url="">教学获奖</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/jxjd1" data-url="">教学基地</a>
+                            </li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+            <a target="_self" href="/Data/List/xyzx" data-url="">校友会</a>
+
+                <div class="ernav" cut="13em">
+                    <img src="Assets/userfiles/images/xy-1.png" cut="13em" />
+                    <ul>
+                            <li>
+                                <a target="_self" href="/Data/List/xyzx" data-url="">校友资讯</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/xyfw" data-url="">校友服务</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/xyfc1" data-url="">校友风采</a>
+                            </li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+            <a target="_self" href="/Data/List/about-party" data-url="">党建工作</a>
+
+                <div class="ernav" cut="13em">
+                    <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
+                    <ul>
+                            <li>
+                                <a target="_self" href="/Data/List/about-party" data-url="">党总支概况</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/zbfc" data-url="">支部风采</a>
+                            </li>
+                            <li>
+                                <a target="_self" href="/Data/List/activity" data-url="">党建活动</a>
+                            </li>
+                    </ul>
+                </div>
+        </li>
+        <li>
+            <a target="_self" href="/Data/List/Contact" data-url="">联系我们</a>
+
+        </li>
+</ul>
+                    </div>
+                    <!--wc-menu  end-->
+
+                    <div class="clearfix"></div>
+                </div>
+                <!--top-tright end-->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--topp end-->
+    <div class="byin">
+        <div class="banbg pos" cut="5em">
+            <!--<div class="bbg">
+                <img src="/Assets/images/ban1.jpg" cut="5em"/>
+            </div>-->
+            <div class="b-con">
+                <div class="container">
+                        <div class="b-banner">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper pos">
+                                        <div class="swiper-slide ">
+                                            <a href="/Data/View/594" target="_blank">
+                                                <div class="ban-text">
+                                                    <h5>Lorem ipsum dolor sit amet.</h5>
+                                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus eius harum hic id quam saepe unde. A commodi eos ipsum nesciunt quae quo repellendus tenetur? Commodi consequatur, eius esse eveniet ex, fugiat ipsam labore maxime modi nisi obcaecati odio omnis rerum sed soluta tempore tenetur voluptas! Dolores, voluptatum.w </p>
+
+                                                </div>
+                                                <div class="ban-img ">
+                                                    <div class="ban-img1 pos">
+                                                        <img src="Assets/userfiles/images/news/examples.jpg"  cut="7em" />
+                                                        <div class="boredr2" cut="7em"></div>
+                                                    </div>
+                                                    <!--ban-img1 end-->
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide ">
+
+                                        </div>
+                                        <div class="swiper-slide ">
+
+                                        </div>
+                                        <div class="swiper-slide ">
+
+                                        </div>
+                                        <div class="swiper-slide ">
+
+                                        </div>
+                                        <div class="swiper-slide ">
+
+                                        </div>
+                                </div>
+                                <!-- Add Pagination -->
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
+                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <!--b-banner end-->
+                </div>
+            </div>
+            <!--b-con end-->
+        </div>
+        <!--banbg end-->
+    </div>
+    <!--byin end-->
+
+
+    <div class="newsbg">
+        <div class="container">
+            <div class="row">
+                <div class="new-left col-lg-8 col-md-8 col-sm-12">
+                        <div class="new-top new-top2 ">
+                            <span>专业新闻</span>
+                            <a href="/Data/List/news">查看更多</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--new-top end-->
+                        <div class="new-leftcon">
+                                <div class="news-ban ">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper pos">
+                                                <div class="swiper-slide">
+                                                    <a href="/Data/View/599" target="_self">
+                                                        <img src="Assets/userfiles/sys_fc5a3ee3-025c-4c90-964f-4e52f98a5589/images/%E4%BF%A1%E6%81%AF%E4%B8%AD%E5%BF%83/%E8%BD%AF%E9%99%A2%E6%96%B0%E9%97%BB/2024/2024-5_23-%E5%9B%BE%E7%89%870.png" cut="61em" />
+                                                        <div class="ban-text">
+                                                            <span>11111111</span>
+                                                            <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor omnis quo veniam. A blanditiis dignissimos hic quis quos sint?</p>
+
+                                                        </div>
+                                                        <i>查看详情</i>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="/Data/View/597" target="_self">
+                                                        <img src="Assets/userfiles/" cut="61em" />
+                                                        <div class="ban-text">
+                                                            <span>2222222</span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa, deserunt mollitia non quam quidem quos rem saepe sequi veritatis.</p>
+                                                        </div>
+                                                        <i>查看详情</i>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <a href="/Data/View/596" target="_self">
+                                                        <img src="Assets/userfiles/" cut="61em" />
+                                                        <div class="ban-text">
+                                                            <span>3333333</span>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut eligendi enim id inventore libero nostrum, quae sapiente sequi voluptatibus?</p>
+                                                        </div>
+                                                        <i>查看详情</i>
+                                                    </a>
+                                                </div>
+                                        </div>
+                                        <!-- Add Pagination -->
+                                        <div class="swiper-pagination hidden-lg hidden-md"></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <!--new-leftcon end-->
+                </div>
+                <!--new-left end-->
+                <div class="new-right col-lg-4 col-md-4 col-sm-12">
+                        <div class="new-top ">
+                            <span>通知公告</span>
+                            <a href="/Data/List/events">查看更多</a>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--new-top end-->
+                        <div class="tong-ul">
+                                <ul>
+                                        <li>
+                                            <a href="/Data/View/561" target="_self">
+                                                <div class="li-date fl">
+                                                    <span>14</span>
+                                                    <p>09月 </p>
+                                                        <i>置顶</i>
+                                                </div>
+                                                <div class="li-tt fr">
+                                                    <p>
+                                                        招聘启事
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/Data/View/598" target="_self">
+                                                <div class="li-date fl">
+                                                    <span>22</span>
+                                                    <p>06月 </p>
+                                                </div>
+                                                <div class="li-tt fr">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, saepe.
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/Data/View/577" target="_self">
+                                                <div class="li-date fl">
+                                                    <span>12</span>
+                                                    <p>11月 </p>
+                                                </div>
+                                                <div class="li-tt fr">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet.
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/Data/View/576" target="_self">
+                                                <div class="li-date fl">
+                                                    <span>12</span>
+                                                    <p>11月 </p>
+                                                </div>
+                                                <div class="li-tt fr">
+                                                    <p>
+                                                        2024年海外优青人才招聘启事
+                                                    </p>
+                                                </div>
+                                                <div class="clearfix"></div>
+                                            </a>
+                                        </li>
+                                </ul>
+                        </div>
+                        <!--tong-ul end-->
+                </div>
+                <!--new-right end-->
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!--newsbg end-->
+
 </div>
+<!--bg1 end-->
+
+<div class="bg2">
+    <div class="byin byin2">
+        <div class="dbg2" cut="5em">
+            <!--<div class="dbg">
+                <img src="/Assets/images/dimg.jpg" cut="5em"/>
+            </div>-->
+            <div class="d-banner">
+                <div class="container">
+                        <div class="d-ban pos">
+                            <div class="new-top new-top3 ">
+                                <span>党建活动</span>
+                                <div class="clearfix"></div>
+                            </div>
+                            <!--/new-top end-->
+                            <div class="dj-ban">
+                                    <div class="swiper-container">
+                                        <div class="swiper-wrapper pos">
+                                                <div class="swiper-slide ">
+                                                    <a href="/Data/View/588" target="_self">
+                                                        <div class="ban-text">
+                                                            <h5>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias ipsa iste similique soluta tempora! At hic provident quis reprehenderit unde.</p>
+                                                            <i>查看详情</i>
+                                                        </div>
+                                                        <div class="ban-img ">
+                                                            <div class="ban-img1 pos text-right">
+                                                                <img src="Assets/userfiles/images/" cut="6em" />
+                                                                <div class="boredr3" cut="6em">
+
+                                                                </div>
+
+                                                            </div>
+                                                            <!--ban-img1 end-->
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide ">
+                                                    <a href="/Data/View/564" target="_self">
+                                                        <div class="ban-text">
+                                                            <h5>Lorem ipsum dolor sit amet.</h5>
+                                                            <p style="text-indent:24.0000pt; text-align:justify"><span style="font-size:18px;"><span style="font-family:Microsoft YaHei;"><span style="line-height:150%">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, expedita.</span></span></span></p>
+
+                                                            <i>查看详情</i>
+                                                        </div>
+                                                        <div class="ban-img ">
+                                                            <div class="ban-img1 pos text-right">
+                                                                <img src="Assets/userfiles/sys_fc5a3ee3-025c-4c90-964f-4e52f98a5589/images/" cut="6em" />
+                                                                <div class="boredr3" cut="6em">
+
+                                                                </div>
+
+                                                            </div>
+                                                            <!--ban-img1 end-->
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </div>
+                                                <div class="swiper-slide ">
+                                                    <a href="/Data/View/230" target="_self">
+                                                        <div class="ban-text">
+                                                            <h5>Lorem ipsum dolor sit amet.</h5>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi in magnam, nam nesciunt officiis repudiandae totam ut? Expedita obcaecati, temporibus.</p>
+                                                            <i>查看详情</i>
+                                                        </div>
+                                                        <div class="ban-img ">
+                                                            <div class="ban-img1 pos text-right">
+                                                                <img src="Assets/userfiles/images/dangjian/202306191857409096.jpg" cut="6em" />
+                                                                <div class="boredr3" cut="6em">
+
+                                                                </div>
+
+                                                            </div>
+                                                            <!--ban-img1 end-->
+                                                        </div>
+                                                        <div class="clearfix"></div>
+                                                    </a>
+                                                </div>
+                                        </div>
+                                        <!-- Add Pagination -->
+
+                                        <div class="swiper-pagination hidden-lg hidden-md"></div>
+                                        <div class="swiper-button-next hidden-sm hidden-xs">
+                                            <img src="Assets/images/aright.png" />
+                                        </div>
+                                        <div class="swiper-button-prev hidden-sm hidden-xs">
+                                            <img src="Assets/images/aleft.png" />
+                                        </div>
+                                    </div>
+                            </div>
+                            <!--dj-ban end-->
+
+                        </div>
+                        <!--/d-ban end-->
+                </div>
+            </div>
+            <!--d-banner end-->
+
+        </div>
+        <!--/dang end-->
+    </div>
+    <div class="keyan">
+        <div class="container">
+            <div class="new-top ">
+                <span>科研方向</span>
+                <div class="clearfix"></div>
+            </div>
+            <!--new-top end-->
+            <div class="ke-con">
+                <div class="row">
+                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="ke-oneone">
+                                <div class="ke-top" cut="0.5em">
+                                    <a href="/Data/List/yjfx" target="_self">
+
+                                        <span>系统软件</span>
+                                        <img src="Assets/images/kic1.png" />
+                                    </a>
+                                </div>
+                                <!--ke-top end-->
+                                <div class="ke-ccon">
+                                        <ul>
+                                                <li>
+                                                    <a href="/Data/View/247" target="_self" class="">并行与分布式系统实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/246" target="_self" class="">可扩展计算与系统实验室</a>
+                                                </li>
+                                        </ul>
+                                    <div class="ke-more">
+                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                    </div>
+                                </div>
+
+                                <!--ke-ccone end-->
+                            </div>
+                            <!--ke-oneone end-->
+                        </div>
+                        <!--ke-one end-->
+
+                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="ke-oneone">
+                                <div class="ke-top" cut="0.5em">
+                                    <a href="/Data/List/yjfx" target="_self">
+
+                                        <span>工业软件</span>
+                                        <img src="Assets/images/kic2.png" />
+                                    </a>
+                                </div>
+                                <!--ke-top end-->
+                                <div class="ke-ccon">
+                                        <ul>
+                                                <li>
+                                                    <a href="/Data/View/250" target="_self" class="">信息系统技术实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/249" target="_self" class="">RFID与物联网实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/248" target="_self" class="">智能软件工程实验室</a>
+                                                </li>
+                                        </ul>
+                                    <div class="ke-more">
+                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                    </div>
+                                </div>
+
+                                <!--ke-ccone end-->
+                            </div>
+                            <!--ke-ccone end-->
+                        </div>
+                        <!--ke-one end-->
+
+                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="ke-oneone">
+                                <div class="ke-top" cut="0.5em">
+                                    <a href="/Data/List/yjfx" target="_self">
+
+                                        <span>数据服务</span>
+                                        <img src="Assets/images/kic3.png" />
+                                    </a>
+                                </div>
+                                <!--ke-top end-->
+                                <div class="ke-ccon">
+                                        <ul>
+                                                <li>
+                                                    <a href="/Data/View/253" target="_self" class="">数据服务实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/252" target="_self" class="">REINS实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/251" target="_self" class="">数字艺术实验室</a>
+                                                </li>
+                                        </ul>
+                                    <div class="ke-more">
+                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                    </div>
+                                </div>
+
+                                <!--ke-ccone end-->
+                            </div>
+                            <!--ke-ccone end-->
+                        </div>
+                        <!--ke-one end-->
+
+                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="ke-oneone">
+                                <div class="ke-top" cut="0.5em">
+                                    <a href="/Data/List/yjfx" target="_self">
+
+                                        <span>独立PI</span>
+                                        <img src="Assets/images/kic4.png" />
+                                    </a>
+                                </div>
+                                <!--ke-top end-->
+                                <div class="ke-ccon">
+                                        <ul>
+                                                <li>
+                                                    <a href="/Data/View/255" target="_self" class="a2">分布式计算与智能信息处理实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/254" target="_self" class="">自适应分布计算实验室</a>
+                                                </li>
+                                                <li>
+                                                    <a href="/Data/View/525" target="_self" class="">BASICS实验室</a>
+                                                </li>
+                                        </ul>
+                                    <div class="ke-more">
+                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                    </div>
+                                </div>
+
+                                <!--ke-ccone end-->
+                            </div>
+                            <!--ke-ccone end-->
+                        </div>
+                        <!--ke-one end-->
+                    <div class="clearfix"></div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <!--ke-con end-->
+
+        </div>
+    </div>
+    <!--keyan end-->
+
+</div>
+<!--bg2 end-->
+
+
+
+
+
+
+        <div class="footer pos">
+            <div class="f-con">
+                <!--f-con end-->
+                <div class="container fbg" cut="55em">
+                    <div class="row">
+                        <div class="f-left col-lg-5 col-md-5 col-sm-5">
+                            <a href=""><img src="Assets/images/logodouble.png" /></a>
+                        </div>
+                        <!--f-left end-->
+
+                        <div class="f-mid col-lg-7 col-md-7 col-sm-7">
+<div class="clearfix">&nbsp;</div>
+
+<ul>
+	<li><img src="Assets/images/fic1.png" /> 地址：哈尔滨市香坊区和兴路26号 成栋10楼</li>
+	<li><img src="Assets/images/fic3.png" />&nbsp;电话：###-########</li>
+	<li><img src="Assets/images/fic2.png" /> 传真：###-########</li>
+	<li><img src="Assets/images/fic4.png" /> 邮编：#####</li>
+</ul>
+                        </div>
+                        <!--f-mid end-->
+
+
+
+                    </div>
+                    <div class="wc-copy">
+                        <p>版权所有@东北林业大学软件工程专业  </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--footer end-->
+
+
+    </div>
+    <!-- box End-->
+
+
+    <div id="AntiForgeryToken" style="display: none;">
+        <input name="__RequestVerificationToken" type="hidden" value="u5G1IuTKQyC1nfPh49i87lvcMAp7T9J1uFGKSJComblnNCj2oeynRvQAvW-Kz63wBFUgGrnHkGkmJYW3XheLfeQSoKiUEXmND2rntKCT-S_aJC-WgYbm8IPkqipPCRGgCGzOJvXsXdLx1zX8W84ZC4c1nMCAd5donfCx_1yvQ201" />
+    </div>
+
+    <div id="msg" style="display:none;">
+        <img src="Assets/img/loading.gif" style="vertical-align: bottom" />&nbsp;&nbsp;loading......
+    </div>
+
+    <script src="Assets/js/jquery.min.js"></script>
+    <script src="Assets/js/layer/layer.js"></script>
+    <script src="Assets/js/scrollToTop.js" type="text/javascript"></script>
+
+    <!-- jquery.unobtrusive ajax表单提交 -->
+    <script src="Assets/js/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="Assets/js/jquery.validate.min.js"></script><!--    表单验证-->
+
+    <script src="Assets/js/bootstrap.min.js"></script>
+    <script src="Assets/js/bootstrap-dropdown-on-hover.js"></script>
+    <script src="Assets/js/index.js"></script>
+    <script src="Assets/js/nav.js"></script>
+    <script src="Assets/js/owl.carousel.min.js"></script><!--    创建响应式滑块和轮播-->
+
+    <script src="Assets/js/scripts.js"></script>
+    <script src="Assets/js/swiper-3.4.5.min.js"></script><!--    图片轮播库主要用于移动设备-->
+
+
+    <script type="text/javascript">
+            //登录
+            $(".logincss").click(function () {
+                var href = $(this).data("url");
+                layer.open({
+                    type: 2,
+                    title: '用户登录',
+                    shade: false,
+                    area: ['320px', '215px'], //宽高
+                    content: ['/Passport/LoginLayer?href=' + href, 'no'], //iframe的url，no代表不显示滚动条
+                });
+            });
+        //置顶
+        scrolltotop.offset(30, 30);
+        scrolltotop.init();
+    </script>
+    <script src="Assets/js/jquery.blockUI.js"></script><!--    在页面上创建一个遮罩层（mask），它可以阻止用户与页面的交互-->
+    <script type="text/javascript">
+        function BlockPage() {
+            $.blockUI({
+                message: $("#msg").html(),
+                css: { border: '1px solid #ccc', padding: '5px', left: (($(window).width() - 135) / 2 + 'px'), top: (($(window).height() - 44) / 2 + 'px'), width: '135px' }
+            });
+        }
+
+        function UnBlockPage() { setTimeout(function () { $.unblockUI(); }, 600); }
+
+        //方法二 （前台提交常用）
+        function CallBack(rdata) {
+            UnBlockPage();
+            if (!rdata.err) {
+                layer.alert(rdata.msg, { title: "友情提示", closeBtn: 0 }, function (index) {
+                    layer.close(index);
+                    if (rdata.url != "" && rdata.url != undefined) {
+                        if (top !== window) {
+                            top.location.href = rdata.url;
+                        } else {
+                            window.location.href = rdata.url;
+                        }
+                    } else {
+                        window.location.reload();
+                    }
+                });
+            } else {
+                layer.msg(rdata.msg, function () { });
+                return false;
+            }
+
+            //重置验证码
+            $(".code").val("");
+            $('#imgCode').trigger('click');
+        }
+    </script>
+    <script>
+        let swiper = new Swiper('.b-banner .swiper-container', {
+            spaceBetween: 0,
+            speed: 1000,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                stopOnLastSlide: false,
+                disableOnInteraction: false,
+            },
+            on: {
+                slideChangeTransitionEnd: function () {
+
+                    $(".b-banner .ban-img").removeClass("animated zoomOut")
+                    $(".b-banner .ban-img").addClass("animated fadeInDown")
+                },
+                slideChangeTransitionStart: function () {
+                    $(".b-banner .ban-img").removeClass("animated fadeInDown")
+                    $(".b-banner .ban-img").addClass("animated zoomOut")
+
+                },
+            },
+            pagination: {
+                el: '.b-banner .swiper-pagination',
+                clickable: true,
+            },
+
+            //				 navigation: {
+            //			          nextEl: ".banner .swiper-button-next",
+            //			          prevEl: ".banner .swiper-button-prev",
+            //			        },
+
+        });
+        if (window.innerWidth <= 767) {
+            let swiper = new Swiper(".dj-ban .swiper-container", {
+                grabCursor: true,
+                effect: "creative",
+                creativeEffect: {
+                    prev: {
+                        shadow: true,
+                        translate: [0, 0, -400],
+                    },
+                    next: {
+                        translate: ["100%", 0, 0],
+                    },
+                },
+                pagination: {
+                    el: '.dj-ban .swiper-pagination',
+                    clickable: true,
+                }
+            });
+        } else {
+            let swiper = new Swiper('.dj-ban .swiper-container', {
+                spaceBetween: 0,
+                speed: 1000,
+                //loop: true,
+                effect: 'cube',
+                autoplay: false,
+                pagination: {
+                    el: '.dj-ban .swiper-pagination',
+                    clickable: true,
+                },
+
+                navigation: {
+                    nextEl: ".dj-ban .swiper-button-next",
+                    prevEl: ".dj-ban .swiper-button-prev",
+                },
+            });
+        }
+        let swiper = new Swiper('.news-ban .swiper-container', {
+            spaceBetween: 30,
+            speed: 1000,
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: false,
+            autoplay: false,
+
+            pagination: {
+                el: '.news-ban .swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                //当宽度大于等于768
+                578: {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    slidesPerColumn: 1,
+                    spaceBetween: 10,
+                    loop: true,
+                },
+                768: {
+                    slidesPerView: 2,
+                    slidesPerGroup: 1,
+                    slidesPerColumn: 1,
+                    spaceBetween: 10,
+                    loop: true,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                if ($(".new-left").offset().top - $(window).scrollTop() < $(window).height()) {
+                    $(".new-left").addClass("animated  fadeInLeft");
+                }
+                if ($(".new-right").offset().top - $(window).scrollTop() < $(window).height()) {
+                    $(".new-right").addClass("animated  fadeInRight");
+                }
+                if ($(".bg2").offset().top - $(window).scrollTop() < $(window).height()) {
+                    $(".bg2").addClass("animated  fadeInDown");
+                }
+
+                if ($(".keyan").offset().top - $(window).scrollTop() < $(window).height()) {
+                    $(".keyan").addClass("animated  fadeInDown");
+                }
+                if ($(".fbg").offset().top - $(window).scrollTop() < $(window).height()) {
+                    $(".fbg").addClass("animated  fadeInDown");
+                }
+            });
+        });
+    </script>
+
 </body>
 </html>

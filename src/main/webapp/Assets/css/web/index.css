@@ -169,10 +169,7 @@ body {
 .logo {
     z-index: 1;
 }
-
-.wc-menu {
-}
-    .wc-menu ul {
+   .wc-menu ul {
         /*转化为table 并且，宽度百分百，*/
         display: table;
         width: 100%;
@@ -346,7 +343,7 @@ img {
 
 
 .banbg {
-    /*background: url(../../images/ban1.jpg) no-repeat center top;*/
+    /*背景图像不会重复，并且会被定位在元素的顶部中间位置*/
     background: url(../../images/ban1.jpg) no-repeat center top;
     min-height: 800px;
     margin-top: 30px;
@@ -1357,6 +1354,7 @@ img {
     .b-banner .swiper-container a .ban-text {
         float: none;
         width: 100%;
+        padding-top: 1.5rem;
     }
 
     .b-banner .swiper-container .swiper-slide a .ban-img {

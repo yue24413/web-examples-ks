@@ -1,13 +1,11 @@
 html {
     font-size: 14px
 }
-
 body {
     font-size: 1rem;
     color: rgba(0,0,0,.8);
     -webkit-font-smoothing: antialiased;
 }
-
 a {
     color: #FC3C2D;
     -webkit-transition: all 0.3s ease-in;
@@ -97,8 +95,6 @@ ol, ul {
         font-size: 1rem;
         line-height: 1.5
     }
-
-    .mnmd-offcanvas
 }
 
 @media (min-width:992px) {
@@ -3440,7 +3436,7 @@ ol, ul {
         padding-left: 0;
         padding-right: 0;
         box-shadow: none;
-        border-radius: none
+        border-radius: none;
     }
 
 .navigation-bar--inverse .navigation-bar__section--seperated {
@@ -9066,7 +9062,7 @@ body.admin-bar .mnmd-offcanvas {
 
 .mnmd-offcanvas__title {
     position: relative;
-    padding: 20px 50px 20px 20px;
+    padding: 20px 50px 20px 10px;
     font-size: 14px;
     background: #fff;
 }
@@ -18361,9 +18357,9 @@ ul.colorful-categories li .tag-item {
         }
 /*é¡µè„šæ ·å¼*/
 .footer {
-  
+
     position: relative;
-   
+
 }
 
 
