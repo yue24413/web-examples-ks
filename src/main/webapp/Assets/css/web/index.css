@@ -702,7 +702,7 @@ img {
 
 /**/
 .bg2 {
-    background: url(../../images/bg2.jpg) no-repeat center top;
+    background: url(../../images/bg1.jpg) no-repeat center top;
     min-height: 500px;
     padding-bottom: 150px;
 }

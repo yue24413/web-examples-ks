@@ -435,7 +435,6 @@
 </ul>
                     </div>
                     <!--wc-menu  end-->
-
                     <div class="clearfix"></div>
                 </div>
                 <!--top-tright end-->
@@ -471,12 +470,40 @@
                                                 <div class="clearfix"></div>
                                             </a>
                                         </div>
-                                        <div class="swiper-slide ">
+                                    <div class="swiper-slide ">
+                                        <a href="/Data/View/594" target="_blank">
+                                            <div class="ban-text">
+                                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                                <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus eius harum hic id quam saepe unde. A commodi eos ipsum nesciunt quae quo repellendus tenetur? Commodi consequatur, eius esse eveniet ex, fugiat ipsam labore maxime modi nisi obcaecati odio omnis rerum sed soluta tempore tenetur voluptas! Dolores, voluptatum.w </p>
 
-                                        </div>
-                                        <div class="swiper-slide ">
+                                            </div>
+                                            <div class="ban-img ">
+                                                <div class="ban-img1 pos">
+                                                    <img src="Assets/userfiles/images/news/examples.jpg"  cut="7em" />
+                                                    <div class="boredr2" cut="7em"></div>
+                                                </div>
+                                                <!--ban-img1 end-->
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide ">
+                                        <a href="/Data/View/594" target="_blank">
+                                            <div class="ban-text">
+                                                <h5>Lorem ipsum dolor sit amet.</h5>
+                                                <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus eius harum hic id quam saepe unde. A commodi eos ipsum nesciunt quae quo repellendus tenetur? Commodi consequatur, eius esse eveniet ex, fugiat ipsam labore maxime modi nisi obcaecati odio omnis rerum sed soluta tempore tenetur voluptas! Dolores, voluptatum.w </p>
 
-                                        </div>
+                                            </div>
+                                            <div class="ban-img ">
+                                                <div class="ban-img1 pos">
+                                                    <img src="Assets/userfiles/images/news/examples.jpg"  cut="7em" />
+                                                    <div class="boredr2" cut="7em"></div>
+                                                </div>
+                                                <!--ban-img1 end-->
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </a>
+                                    </div>
                                         <div class="swiper-slide ">
 
                                         </div>
@@ -489,7 +516,7 @@
                                 </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                                    <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span>
+                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
                                     <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
                                     <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
                                     <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
@@ -647,7 +674,7 @@
     <div class="byin byin2">
         <div class="dbg2" cut="5em">
             <!--<div class="dbg">
-                <img src="/Assets/images/dimg.jpg" cut="5em"/>
+                <img src="/Assets/images/.jpg" cut="5em"/>
             </div>-->
             <div class="d-banner">
                 <div class="container">
@@ -690,7 +717,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/sys_fc5a3ee3-025c-4c90-964f-4e52f98a5589/images/" cut="6em" />
+                                                                <img src="Assets/userfiles/images/" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -710,7 +737,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images/dangjian/202306191857409096.jpg" cut="6em" />
+                                                                <img src="Assets/userfiles/images/" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -960,7 +987,7 @@
     <script src="Assets/js/owl.carousel.min.js"></script><!--    创建响应式滑块和轮播-->
 
     <script src="Assets/js/scripts.js"></script>
-    <script src="Assets/js/swiper-3.4.5.min.js"></script><!--    图片轮播库主要用于移动设备-->
+    <script src="Assets/js/swiper-3.4.5.min.js"></script><!--    主要用于移动设备图片轮播库-->
 
 
     <script type="text/javascript">
@@ -976,9 +1003,9 @@
                 });
             });
         //置顶
-        scrolltotop.offset(30, 30);
         scrolltotop.init();
     </script>
+
     <script src="Assets/js/jquery.blockUI.js"></script><!--    在页面上创建一个遮罩层（mask），它可以阻止用户与页面的交互-->
     <script type="text/javascript">
         function BlockPage() {
@@ -1016,12 +1043,12 @@
             $('#imgCode').trigger('click');
         }
     </script>
-    <script>
-        let swiper = new Swiper('.b-banner .swiper-container', {
+    <script>//轮播图   https://swiperjs.com/get-started
+        const swiper = new Swiper('.b-banner .swiper-container', {
             spaceBetween: 0,
             speed: 1000,
-            loop: true,
-            autoplay: {
+            loop: true,//循环播放
+            autoplay: {//自动播放配置，延迟5秒切换，不停留在最后一张，交互时不暂停
                 delay: 5000,
                 stopOnLastSlide: false,
                 disableOnInteraction: false,
@@ -1051,13 +1078,13 @@
         });
         if (window.innerWidth <= 767) {
             let swiper = new Swiper(".dj-ban .swiper-container", {
-                grabCursor: true,
+                grabCursor: true,//抓取光标
                 effect: "creative",
-                creativeEffect: {
+                creativeEffect: { //创意效果
                     prev: {
                         shadow: true,
                         translate: [0, 0, -400],
-                    },
+                    },//前后滑动的阴影
                     next: {
                         translate: ["100%", 0, 0],
                     },
@@ -1074,22 +1101,22 @@
                 //loop: true,
                 effect: 'cube',
                 autoplay: false,
-                pagination: {
+                pagination: { //分页器
                     el: '.dj-ban .swiper-pagination',
-                    clickable: true,
+                    clickable: true,//用户点击
                 },
-
                 navigation: {
                     nextEl: ".dj-ban .swiper-button-next",
                     prevEl: ".dj-ban .swiper-button-prev",
                 },
             });
         }
+
         let swiper = new Swiper('.news-ban .swiper-container', {
-            spaceBetween: 30,
+            spaceBetween: 30,//滑块间距
             speed: 1000,
-            slidesPerView: 3,
-            slidesPerGroup: 3,
+            slidesPerView: 3,//显示3个滑块
+            slidesPerGroup: 3,//每组滑动3个滑块
             loop: false,
             autoplay: false,
 
