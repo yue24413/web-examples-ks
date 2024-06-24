@@ -515,14 +515,7 @@
                                         </div>
                                 </div>
                                 <!-- Add Pagination -->
-                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets">
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 1"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 5"></span>
-                                    <span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 6"></span>
-                                </div>
+                                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
                             </div>
                         </div>
                         <!--b-banner end-->
@@ -1044,7 +1037,7 @@
         }
     </script>
     <script>//轮播图   https://swiperjs.com/get-started
-        const swiper = new Swiper('.b-banner .swiper-container', {
+        let swiper1 = new Swiper('.b-banner .swiper-container', {
             spaceBetween: 0,
             speed: 1000,
             loop: true,//循环播放
@@ -1112,7 +1105,7 @@
             });
         }
 
-        let swiper = new Swiper('.news-ban .swiper-container', {
+        let swiper2 = new Swiper('.news-ban .swiper-container', {
             spaceBetween: 30,//滑块间距
             speed: 1000,
             slidesPerView: 3,//显示3个滑块
