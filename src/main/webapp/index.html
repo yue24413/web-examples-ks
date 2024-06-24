@@ -17,28 +17,14 @@
     <link href="Assets/css/web/animate.css" rel="stylesheet" />
 
     <link href="Assets/css/web/vendors.css" rel="stylesheet" />
-    <link href="Assets/css/web/style.css" rel="stylesheet" />
+<!--    <link href="Assets/css/web/style.css" rel="stylesheet" />-->
+    <link href="Assets/css/web/offcanvas.css" rel="stylesheet">
     <link href="Assets/css/web/iconfont.css" rel="stylesheet" />
 
     <link href="Assets/css/web/common.css?" rel="stylesheet" />
     <link href="Assets/css/web/index.css?" rel="stylesheet" />
 
     <link href="Assets/css/web/webpager.css" rel="stylesheet" />
-
-
-
-    <!-- jQuery -->
-
-<!--<script>-->
-<!--var _hmt = _hmt || [];-->
-<!--(function() {-->
-<!--  var hm = document.createElement("script");-->
-<!--  hm.src = "https://hm.baidu.com/hm.js?3f85061cc4512ce96b403c88900f5fca";-->
-<!--  var s = document.getElementsByTagName("script")[0];-->
-<!--  s.parentNode.insertBefore(hm, s);-->
-<!--})();-->
-<!--</script>-->
-
 </head>
 
 <body>
@@ -64,7 +50,7 @@
                         <a href="/" class=" logo1">
                             <img src="Assets/images/logodouble.png" id="img" class="img-responsive">
                         </a>
-                        <a href="#mnmd-offcanvas-mobile" class="offcanvas-menu-toggle mobile-header-btn js-mnmd-offcanvas-toggle">
+                        <a href="#mnmd-offcanvas-mobile" class="offcanvas-menu-toggle is-active mobile-header-btn js-mnmd-offcanvas-toggle">
                             <i class="iconfont icon-wangzhandaohang mdicon--last hidden-xs"></i>
                             <i class="iconfont icon-wangzhandaohang visible-xs-inline-block"></i>
                         </a>
@@ -85,199 +71,67 @@
                 </ul>
                 <a href="#mnmd-offcanvas-mobile" class="mnmd-offcanvas-close js-mnmd-offcanvas-close" aria-label="Close"><span aria-hidden="true">&#10005;</span></a>
             </div>
-
             <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
-                <div id="offcanvas-menu" class="menu-main-menu-container">
-
-<ul class="navigation navigation--offcanvas">
+            <div id="offcanvas-menu" class="menu-main-menu-container">
+    <ul class="navigation navigation--offcanvas">
         <li class="menu-item"><a href="/" aria-current="page">首页</a></li>
-        <li class="menu-item menu-item-has-children ">
-            <a href="/Data/List/welcome" target="_self">
-                专业概况
-            </a>
-
-                <ul class="sub-menu" style="display: block;">
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/welcome">
-                                欢迎辞
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/about-se">
-                                专业简介
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/leadership">
-                                专业领导
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/administrator">
-                                机构设置
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/Previous-leaders">
-                                历任领导
-                            </a>
-                        </li>
-                </ul>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/welcome" target="_self">专业概况</a>
+            <ul class="sub-menu" style="display: block;">
+                <li class="menu-item"><a target="_self" href="/Data/List/welcome">欢迎辞</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/about-se">专业简介</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/leadership">专业领导</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/administrator">机构设置</a></li><li class="menu-item"><a target="_self" href="/Data/List/Previous-leaders">历任领导</a></li>
+            </ul>
         </li>
-        <li class="menu-item menu-item-has-children ">
-            <a href="/Data/List/jcrc" target="_self">
-                师资队伍
-            </a>
-
-                <ul class="sub-menu" style="display: block;">
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/jcrc">
-                                杰出人才
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/qncj">
-                                青年人才
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/people">
-                                教师名录
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/bsh">
-                                博士后
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/txjs">
-                                荣退教师
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/rczp">
-                                人才招聘
-                            </a>
-                        </li>
-                </ul>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/jcrc" target="_self">师资队伍</a>
+            <ul class="sub-menu" style="display: block;">
+                <li class="menu-item"><a target="_self" href="/Data/List/jcrc">杰出人才</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/qncj">青年人才</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/people">教师名录</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/bsh">博士后</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/txjs">荣退教师</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/rczp">人才招聘</a></li>
+            </ul>
         </li>
-        <li class="menu-item menu-item-has-children ">
-            <a href="/Data/List/about-research" target="_self">
-                科学研究
-            </a>
-
-                <ul class="sub-menu" style="display: block;">
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/about-research">
-                                科研概况
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/yjfx">
-                                研究方向
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/research-kyjd">
-                                科研基地
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/kycg">
-                                科研成果
-                            </a>
-                        </li>
-                </ul>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/about-research" target="_self">科学研究</a>
+            <ul class="sub-menu" style="display: block;">
+                <li class="menu-item"><a target="_self" href="/Data/List/about-research">科研概况</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/yjfx">研究方向</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/research-kyjd">科研基地</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/kycg">科研成果</a></li>
+            </ul>
         </li>
-        <li class="menu-item menu-item-has-children ">
-            <a href="/Data/List/zyjs" target="_self">
-                人才培养
-            </a>
-
-                <ul class="sub-menu" style="display: block;">
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/zyjs">
-                                本科生培养
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/yjs">
-                                研究生培养
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/jxhj1">
-                                教学获奖
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/jxjd1">
-                                教学基地
-                            </a>
-                        </li>
-                </ul>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/zyjs" target="_self">人才培养</a>
+            <ul class="sub-menu" style="display: block;">
+                <li class="menu-item"><a target="_self" href="/Data/List/zyjs">本科生培养</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/yjs">研究生培养</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/jxhj1">教学获奖</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/jxjd1">教学基地</a></li>
+            </ul>
         </li>
-        <li class="menu-item menu-item-has-children ">
-            <a href="/Data/List/xyzx" target="_self">
-                校友会
-            </a>
-
-                <ul class="sub-menu" style="display: block;">
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/xyzx">
-                                校友资讯
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/xyfw">
-                                校友服务
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/xyfc1">
-                                校友风采
-                            </a>
-                        </li>
-                </ul>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/xyzx" target="_self">校友会</a>
+            <ul class="sub-menu" style="display: block;">
+                <li class="menu-item"><a target="_self" href="/Data/List/xyzx">校友资讯</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/xyfw">校友服务</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/xyfc1">校友风采</a></li>
+            </ul>
         </li>
-        <li class="menu-item menu-item-has-children ">
-            <a href="/Data/List/about-party" target="_self">
-                党建工作
-            </a>
-
-                <ul class="sub-menu" style="display: block;">
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/about-party">
-                                党总支概况
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/zbfc">
-                                支部风采
-                            </a>
-                        </li>
-                        <li class="menu-item">
-                            <a target="_self" href="/Data/List/activity">
-                                党建活动
-                            </a>
-                        </li>
-                </ul>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/about-party" target="_self">党建工作</a>
+            <ul class="sub-menu" style="display: block;">
+                <li class="menu-item"><a target="_self" href="/Data/List/about-party">党总支概况</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/zbfc">支部风采</a></li>
+                <li class="menu-item"><a target="_self" href="/Data/List/activity">党建活动</a></li>
+            </ul>
         </li>
-        <li class="menu-item  ">
-            <a href="/Data/List/Contact" target="_self">
-                联系我们
-            </a>
-
-        </li>
-</ul>
+        <li class="menu-item  "><a href="/Data/List/Contact" target="_self">联系我们</a></li>
+    </ul>
 
 
                 </div>
             </div>
 
         </div>
-        <!--手机版 end-->
+        <!-- end-->
 
 
 
@@ -295,31 +149,17 @@
                     <!--top-trtop end-->
                     <div class="wc-menu ">
 
-<ul>
-        <li>
-            <a href="/">首页</a>
-        </li>
-            <li>
-            <a data-id="" target="_self" href="/Data/List/welcome" data-url="">专业概况</a>
-
+    <ul>
+        <li><a href="/">首页</a></li>
+        <li><a data-id="" target="_self" href="/Data/List/welcome" data-url="">专业概况</a>
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
                     <ul>
-                            <li>
-                                <a target="_self" href="/Data/List/welcome" data-url="">欢迎辞</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/about-se" data-url="">专业简介</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/leadership" data-url="">专业领导</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/administrator" data-url="">机构设置</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/Previous-leaders" data-url="">历任领导</a>
-                            </li>
+                        <li><a target="_self" href="/Data/List/welcome" data-url="">欢迎辞</a></li>
+                        <li><a target="_self" href="/Data/List/about-se" data-url="">专业简介</a></li>
+                        <li><a target="_self" href="/Data/List/leadership" data-url="">专业领导</a></li>
+                        <li><a target="_self" href="/Data/List/administrator" data-url="">机构设置</a></li>
+                        <li><a target="_self" href="/Data/List/Previous-leaders" data-url="">历任领导</a></li>
                     </ul>
                 </div>
         </li>
@@ -329,24 +169,12 @@
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
                     <ul>
-                            <li>
-                                <a target="_self" href="/Data/List/jcrc" data-url="">杰出人才</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/qncj" data-url="">青年人才</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/people" data-url="">教师名录</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/bsh" data-url="">博士后</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/txjs" data-url="">荣退教师</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/rczp" data-url="">人才招聘</a>
-                            </li>
+                        <li><a target="_self" href="/Data/List/jcrc" data-url="">杰出人才</a></li>
+                        <li><a target="_self" href="/Data/List/qncj" data-url="">青年人才</a></li>
+                        <li><a target="_self" href="/Data/List/people" data-url="">教师名录</a></li>
+                        <li><a target="_self" href="/Data/List/bsh" data-url="">博士后</a></li>
+                        <li><a target="_self" href="/Data/List/txjs" data-url="">荣退教师</a></li>
+                        <li><a target="_self" href="/Data/List/rczp" data-url="">人才招聘</a></li>
                     </ul>
                 </div>
         </li>
@@ -356,18 +184,10 @@
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
                     <ul>
-                            <li>
-                                <a target="_self" href="/Data/List/about-research" data-url="">科研概况</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/yjfx" data-url="">研究方向</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/research-kyjd" data-url="">科研基地</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/kycg" data-url="">科研成果</a>
-                            </li>
+                        <li><a target="_self" href="/Data/List/about-research" data-url="">科研概况</a></li>
+                        <li><a target="_self" href="/Data/List/yjfx" data-url="">研究方向</a></li>
+                        <li><a target="_self" href="/Data/List/research-kyjd" data-url="">科研基地</a></li>
+                        <li><a target="_self" href="/Data/List/kycg" data-url="">科研成果</a></li>
                     </ul>
                 </div>
         </li>
@@ -377,18 +197,10 @@
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/rc-1.jpg" cut="13em" />
                     <ul>
-                            <li>
-                                <a target="_self" href="/Data/List/zyjs" data-url="">本科生培养</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/yjs" data-url="">研究生培养</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/jxhj1" data-url="">教学获奖</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/jxjd1" data-url="">教学基地</a>
-                            </li>
+                            <li><a target="_self" href="/Data/List/zyjs" data-url="">本科生培养</a></li>
+                            <li><a target="_self" href="/Data/List/yjs" data-url="">研究生培养</a></li>
+                            <li><a target="_self" href="/Data/List/jxhj1" data-url="">教学获奖</a></li>
+                            <li><a target="_self" href="/Data/List/jxjd1" data-url="">教学基地</a></li>
                     </ul>
                 </div>
         </li>
@@ -398,15 +210,9 @@
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/xy-1.png" cut="13em" />
                     <ul>
-                            <li>
-                                <a target="_self" href="/Data/List/xyzx" data-url="">校友资讯</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/xyfw" data-url="">校友服务</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/xyfc1" data-url="">校友风采</a>
-                            </li>
+                            <li><a target="_self" href="/Data/List/xyzx" data-url="">校友资讯</a></li>
+                            <li><a target="_self" href="/Data/List/xyfw" data-url="">校友服务</a></li>
+                            <li><a target="_self" href="/Data/List/xyfc1" data-url="">校友风采</a></li>
                     </ul>
                 </div>
         </li>
@@ -416,15 +222,9 @@
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
                     <ul>
-                            <li>
-                                <a target="_self" href="/Data/List/about-party" data-url="">党总支概况</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/zbfc" data-url="">支部风采</a>
-                            </li>
-                            <li>
-                                <a target="_self" href="/Data/List/activity" data-url="">党建活动</a>
-                            </li>
+                            <li><a target="_self" href="/Data/List/about-party" data-url="">党总支概况</a></li>
+                            <li><a target="_self" href="/Data/List/zbfc" data-url="">支部风采</a></li>
+                            <li><a target="_self" href="/Data/List/activity" data-url="">党建活动</a></li>
                     </ul>
                 </div>
         </li>
@@ -1048,7 +848,6 @@
             },
             on: {
                 slideChangeTransitionEnd: function () {
-
                     $(".b-banner .ban-img").removeClass("animated zoomOut")
                     $(".b-banner .ban-img").addClass("animated fadeInDown")
                 },
@@ -1062,7 +861,6 @@
                 el: '.b-banner .swiper-pagination',
                 clickable: true,
             },
-
             //				 navigation: {
             //			          nextEl: ".banner .swiper-button-next",
             //			          prevEl: ".banner .swiper-button-prev",

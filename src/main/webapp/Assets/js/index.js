@@ -246,7 +246,7 @@ $(function () {
         }
         page_url = args;
     };//封装好的函数，获取从a.html传来的参数type
-    InitUrlParms();
+    InitUrlParms();  
 
     $(".horizontal-tag .tabs li").click(function () {
         $(this).addClass('active').siblings().removeClass('active');
