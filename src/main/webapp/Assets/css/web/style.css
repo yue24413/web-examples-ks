@@ -2027,10 +2027,7 @@ ol, ul {
         padding-bottom: 25px
     }
 
-.list-horizontal {
-    margin-top: 0;
-    margin-bottom: 0
-}
+
 
     .list-horizontal > li {
         display: inline-block;
@@ -5888,20 +5885,9 @@ ul.nav-tabs {
     font-size: 16px
 }
 
-.social-list {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-size: 1rem;
-    list-style: none
-}
 
-@media (min-width:768px) {
-    .social-list {
-        font-size: 16px;
-        font-size: 1.14286rem
-    }
-}
+
+
 
 .social-list > li > a {
     color: inherit;
@@ -8983,37 +8969,13 @@ body.is-mnmd-offcanvas-opened {
     overflow: hidden
 }
 
-.mnmd-offcanvas {
-    max-width: 100%;
-    width: 320px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: auto;
-    bottom: 0;
-    margin: 0;
-    overflow-y: auto;
-    background: #fff;
-    z-index: 999999;
-    -webkit-transform: translate(101%,0);
-    -moz-transform: translate(101%,0);
-    -ms-transform: translate(101%,0);
-    -o-transform: translate(101%,0);
-    transform: translate(101%,0);
-    -webkit-transition: all .2s cubic-bezier(.23,1,.32,1) .1s;
-    -moz-transition: all .2s cubic-bezier(.23,1,.32,1) .1s;
-    transition: all .2s cubic-bezier(.23,1,.32,1) .1s
-}
+
 
 body.admin-bar .mnmd-offcanvas {
     margin-top: 46px
 }
 
-@media (min-width:768px) {
-    .mnmd-offcanvas {
-        width: 360px
-    }
-}
+
 
 @media (min-width:784px) {
     body.admin-bar .mnmd-offcanvas {
@@ -9040,6 +9002,70 @@ body.admin-bar .mnmd-offcanvas {
     z-index: 1030
 }
 
+
+.mnmd-offcanvas {
+    max-width: 100%;
+    width: 320px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    margin: 0;
+    overflow-y: auto;
+    background: #fff;
+    z-index: 999999;
+    -webkit-transform: translate(101%,0);
+    -moz-transform: translate(101%,0);
+    -ms-transform: translate(101%,0);
+    -o-transform: translate(101%,0);
+    transform: translate(101%,0);
+    -webkit-transition: all .2s cubic-bezier(.23,1,.32,1) .1s;
+    -moz-transition: all .2s cubic-bezier(.23,1,.32,1) .1s;
+    transition: all .2s cubic-bezier(.23,1,.32,1) .1s
+}
+@media (min-width:768px) {
+    .mnmd-offcanvas {
+        width: 360px
+    }
+}
+.mnmd-offcanvas.is-active {
+    box-shadow: 0 1px 10px 10px rgba(0,0,0,.1);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0)
+}
+.mnmd-offcanvas__title {
+    position: relative;
+    padding: 20px 50px 20px 10px;
+    font-size: 14px;
+    background: #fff;
+}
+.social-list {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-size: 1rem;
+    list-style: none
+}
+@media (min-width:768px) {
+    .social-list {
+        font-size: 16px;
+        font-size: 1.14286rem
+    }
+}
+.mnmd-offcanvas__title .social-list {
+    margin-top: 10px;
+    font-size: 16px;
+    color: rgba(0,0,0,.4)
+}
+.list-horizontal {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
 .mnmd-offcanvas-close {
     height: 30px;
     width: 30px;
@@ -9060,18 +9086,8 @@ body.admin-bar .mnmd-offcanvas {
     overflow: hidden
 }
 
-.mnmd-offcanvas__title {
-    position: relative;
-    padding: 20px 50px 20px 10px;
-    font-size: 14px;
-    background: #fff;
-}
 
-    .mnmd-offcanvas__title .social-list {
-        margin-top: 10px;
-        font-size: 16px;
-        color: rgba(0,0,0,.4)
-    }
+
 
 .mnmd-offcanvas__section {
     padding: 20px
