@@ -293,7 +293,7 @@ img {
     min-height: 800px;
     margin-top: 30px;
 }
-.byin {
+.backView {
     background: url(../../images/yin.png) no-repeat center top;
     padding: 10px 0px 10px;
     min-height: 922px;
@@ -580,7 +580,7 @@ img {
     min-height: 800px;
     padding-top: 130px;
 }
-.byin2 {
+.backView2 {
     background: url(../../images/yin.png) no-repeat center -150px;
 }
 
@@ -715,7 +715,7 @@ img {
 
 .keyan {
     min-height: 500px;
-    /*padding-top: 60px;*/
+    padding-bottom: 120px;
     margin-top: -190px;
 }
 
@@ -900,7 +900,7 @@ img {
 /*另一种方法，宽度百分百*/
 /*.navigation--offcanvas .submenu-toggle{
 	width: 100%;
-	
+
 }
 .navigation--offcanvas .submenu-toggle i{
 	right: 0px;
@@ -957,7 +957,7 @@ img {
         padding-top: 59px;
     }
 
-    .byin2 {
+    .backView2 {
         min-height: 780px;
     }
 
@@ -994,10 +994,10 @@ img {
     .banbg {
         min-height: 600px;
     }
-.byin{
+.backView{
 
 }
-    .byin {
+    .backView {
         min-height: auto;
     }
 
@@ -1121,7 +1121,7 @@ img {
         font-size: 16px;
     }
 
-    .byin2 {
+    .backView2 {
         background: none;
     }
 
@@ -1319,7 +1319,7 @@ img {
         padding-top: 25px;
     }
 
-    .byin2 {
+    .backView2 {
         padding-top: 0;
     }
 
@@ -1423,7 +1423,7 @@ img {
         margin-top: 20px;
     }
 
-    .byin {
+    .backView {
         margin-top: -35px;
     }
 
