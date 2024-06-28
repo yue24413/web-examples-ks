@@ -65,8 +65,6 @@ body {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    -webkit-transition: opacity .3s;
-    -o-transition: opacity .3s;
     transition: opacity .3s;
     position: relative;
     z-index: 1000;
@@ -106,7 +104,9 @@ body {
     box-shadow: none;
     border-radius: 0;
 }
-
+.search-form .searchup{
+    width: 30%;
+}
 .search-form .form-text:focus {
     border: none;
     border-bottom: 1px solid #ccc;
@@ -126,8 +126,6 @@ body {
     color: #666;
     font-weight: bold;
     font-size: 20px;
-    -webkit-transition: all .3s;
-    -o-transition: all .3s;
     transition: all .3s;
 }
 .search-form .form-submit:hover {
@@ -277,8 +275,6 @@ wc-menu ul li .ernav ul li a:hover {
 [cut="0.4em"] {
     clip-path: polygon(0 1.00em, 1.00em 0, calc(100% - 1.00em) 0, 100% 1.00em, 100% calc(100% - 1.00em), calc(100% - 1.00em) 100%, 1.00em 100%, 0 calc(100% - 1.00em));
 }
-.index-con {
-}
 
 img {
     max-width: 100%;
@@ -338,25 +334,22 @@ img {
     color: #fff;
     line-height: 54px;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.55);
-    /*padding-bottom: 20px;*/
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(54px * 2); /* 设置最大高度等于两行的总高度 */
     margin-bottom: 40px;
 }
-
 .b-banner .swiper-container a .ban-text p {
     font-size: 16px;
     color: #fff;
     line-height: 30px;
-    /*padding-bottom: 20px;*/
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(30px * 5); /* 设置最大高度等于五行的总高度 */
 }
 .b-banner .swiper-container a {
     text-decoration: none;
@@ -434,16 +427,15 @@ img {
     margin-top: -8px;
 }
 .news-ban a .ban-text span {
-    display: block;
     font-size: 18px;
     color: #fff;
     line-height: 32px;
     min-height: 64px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(32px * 2); /* 设置最大高度等于两行的总高度 */
     margin: 25px 0;
 }
 .news-ban a .ban-text p {
@@ -452,9 +444,9 @@ img {
     line-height: 24px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(24px * 5); /* 设置最大高度等于五行的总高度 */
     min-height: 125px;
 }
 .news-ban a i {
@@ -485,7 +477,6 @@ img {
 .news-ban .swiper-container .swiper-pagination-bullet-active {
     background: #2b4dff;
 }
-
 
 .tong-ul ul {
     padding: 0;
@@ -526,7 +517,6 @@ img {
     font-size: 16px;
     color: #fff;
 }
-
 .tong-ul ul li a .li-date i {
     font-size: 12px;
     color: #fff;
@@ -539,23 +529,21 @@ img {
     top: 0;
     right: 0;
 }
-
 .tong-ul ul li a .li-tt {
     border-bottom: 1px solid #2673f7;
     width: calc(100% - 118px);
     transition: all 0.4s ease-out;
     box-shadow: 0px 35px 57px -17px rgba(0, 0, 0, 0);
 }
-
 .tong-ul ul li a .li-tt p {
     font-size: 18px;
     color: #fff;
     line-height: 32px;
     overflow: hidden;
     text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    max-height: calc(32px * 2); /* 设置最大高度等于两行的总高度 */
 }
 .tong-ul ul li a .li-tt p i {
     font-size: 12px;
@@ -567,9 +555,7 @@ img {
     font-style: normal;
 }
 
-
-
-/**/
+/*******************************/
 .bg2 {
     background: url(../../images/bg1.jpg) no-repeat center top;
     min-height: 500px;
@@ -587,95 +573,85 @@ img {
 .new-top3 {
     position: absolute;
 }
-
-    .new-top3 span {
-        font-size: 32px;
-        color: #333;
-        display: block;
-    }
-
-.dj-ban {
+.new-top3 span {
+    font-size: 32px;
+    color: #333;
+    display: block;
+}
+/*党建*/
+.party-ban {
+}
+.party-ban .swiper-container {
+        padding-bottom: 30px;
+}
+.party-ban .swiper-container .swiper-slide {
 }
 
-    .dj-ban .swiper-container {
-        padding-bottom: 30px;
-    }
+.party-ban .swiper-container .swiper-slide a {
+    display: block;
+    text-decoration: none;
+}
+.party-ban .swiper-container .swiper-slide a .ban-text {
+    width: 37%;
+    float: left;
+    padding-top: 70px;
+}
+.party-ban .swiper-container .swiper-slide a .ban-img {
+    width: 60%;
+    float: right;
+}
+.party-ban .swiper-container .swiper-slide a .ban-text h5 {
+    font-size: 26px;
+    color: #4156d2;
+    line-height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    max-height: 96px; /* 设置最大高度等于两行的总高度 */
+    margin-top: 50px;
+}
 
-        .dj-ban .swiper-container .swiper-slide {
-        }
+.party-ban .swiper-container .swiper-slide a .ban-text p {
+    font-size: 16px;
+    color: #999;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: column;
+    max-height: 120px; /* 设置最大高度等于四行的总高度 */
+    min-height: 160px; /* 保持原有的min-height */
+}
+.party-ban .swiper-container .swiper-slide a .ban-text i {
+    font-size: 18px;
+    color: #335ff1;
+    font-style: normal;
+}
 
-            .dj-ban .swiper-container .swiper-slide a {
-                display: block;
-                text-decoration: none;
-            }
+.party-ban .swiper-container .swiper-button-prev,
+.party-ban .swiper-container-rtl .swiper-button-next {
+    background: none;
+}
 
-                .dj-ban .swiper-container .swiper-slide a .ban-text {
-                    width: 37%;
-                    float: left;
-                    padding-top: 70px;
-                }
+.party-ban .swiper-button-next,
+.party-ban .swiper-container-rtl .swiper-button-prev {
+    background: none;
+}
 
-                .dj-ban .swiper-container .swiper-slide a .ban-img {
-                    width: 60%;
-                    float: right;
-                }
-
-                .dj-ban .swiper-container .swiper-slide a .ban-text h5 {
-                    font-size: 26px;
-                    color: #4156d2;
-                    line-height: 48px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 2;
-                    -webkit-box-orient: vertical;
-                    margin-top: 50px;
-                }
-
-                .dj-ban .swiper-container .swiper-slide a .ban-text p {
-                    font-size: 16px;
-                    color: #999;
-                    line-height: 30px;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 4;
-                    -webkit-box-orient: vertical;
-                    min-height: 160px;
-                }
-
-                .dj-ban .swiper-container .swiper-slide a .ban-text i {
-                    font-size: 18px;
-                    color: #335ff1;
-                    font-style: normal;
-                }
-
-        .dj-ban .swiper-container .swiper-button-prev,
-        .dj-ban .swiper-container-rtl .swiper-button-next {
-            background: none;
-        }
-
-    .dj-ban .swiper-button-next,
-    .dj-ban .swiper-container-rtl .swiper-button-prev {
-        background: none;
-    }
-
-    .dj-ban .swiper-button-next,
-    .dj-ban .swiper-button-prev {
-        top: 100%;
-    }
-
-    .dj-ban .swiper-container .swiper-button-next,
-    .dj-ban .swiper-container .swiper-button-prev {
-        width: 79px;
-        height: 16px;
-        right: 0;
-    }
-
-    .dj-ban .swiper-container .swiper-button-prev {
-        left: 0;
-    }
-
+.party-ban .swiper-button-next,
+.party-ban .swiper-button-prev {
+    top: 100%;
+}
+.party-ban .swiper-container .swiper-button-next,
+.party-ban .swiper-container .swiper-button-prev {
+    width: 79px;
+    height: 16px;
+    right: 0;
+}
+.party-ban .swiper-container .swiper-button-prev {
+    left: 0;
+}
 .boredr3 {
     display: block;
     position: absolute;
@@ -686,17 +662,13 @@ img {
     height: 96%;
     margin-top: 2%;
 }
-
-
-
-.dj-ban .swiper-container .swiper-pagination {
+.party-ban .swiper-container .swiper-pagination {
     text-align: left;
     bottom: 10px;
     width: 100%;
     left: 30%;
 }
-
-.dj-ban .swiper-container .swiper-pagination-bullet {
+.party-ban .swiper-container .swiper-pagination-bullet {
     display: inline-block;
     width: 34px;
     height: 11px;
@@ -706,127 +678,94 @@ img {
     border-radius: 5px;
     margin-right: 13px;
 }
-
-.dj-ban .swiper-container .swiper-pagination-bullet-active {
-    background: linear-gradient(to bottom, #54c8f2, #3184ed);
+.party-ban .swiper-container .swiper-pagination-bullet-active {
+    background: linear-gradient(to bottom, #54c8f2, #3184ed);/*从上到下渐变*/
 }
-
-
-
-.keyan {
+/*科研*/
+.scientificResearch {
     min-height: 500px;
     padding-bottom: 120px;
     margin-top: -190px;
 }
-
-.ke-con {
-    padding-top: 40px;
-}
-
-.ke-top {
+.science-top {
     background: linear-gradient(to bottom, #396afc, #2a4aff);
     min-height: 123px;
     position: relative;
     opacity: .8;
 }
-
-    /* .ke-top:hover {
-	opacity: 1;
-	cursor: pointer;
+.science-top span {
+    font-size: 26px;
+    color: #fff;
+    padding-left: 25px;
+    padding-top: 55px;
+    display: inline-block;
 }
- */
-    .ke-top span {
-        font-size: 26px;
-        color: #fff;
-        padding-left: 25px;
-        padding-top: 55px;
-        display: inline-block;
-    }
-
-    .ke-top img {
-        position: absolute;
-        right: 10px;
-        top: 18px;
-    }
-
-.ke-ccon {
+.science-top img {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+.science-ccon {
     margin-top: 10px;
     background: url(../../images/xbg11.png) no-repeat left top;
     width: 314px;
     height: 351px;
     padding: 30px 16px;
-    opacity: .8;
+    opacity: 0.8;
 }
-
-.ke-oneone {
+.science-oneone {
     width: 92%;
 }
-
-    .ke-oneone:hover .ke-ccon {
-        opacity: 1;
-        background-image: url(../../images/xbg11-h.png);
-    }
-
-    .ke-oneone:hover .ke-top {
-        opacity: 1;
-        cursor: pointer;
-    }
-
-.ke-ccon {
+.science-oneone:hover .science-ccon {
+    opacity: 1;
+    background-image: url(../../images/xbg11-h.png);
 }
-
-.ke-more {
+.science-oneone:hover .science-top {
+    opacity: 1;
+    cursor: pointer;
+}
+.science-more {
     text-align: right;
     padding-right: 10px;
 }
-
-.ke-ccon ul {
+.science-ccon ul {
     padding: 0;
     margin: 0;
 }
-
-    .ke-ccon ul li {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 18px;
-    }
-
-        .ke-ccon ul li:last-child {
-            margin-bottom: 0px;
-        }
-
-        .ke-ccon ul li a {
-            font-size: 18px;
-            color: #fff;
-            background: url(../../images/xbg1.png) no-repeat center center;
-            width: 278px;
-            height: 81px;
-            display: block;
-            line-height: 24px;
-            padding-left: 21px;
-            padding-top: 27px;
-        }
-
-
-
-            .ke-ccon ul li a.a2 {
-                padding-right: 39px;
-                padding-top: 16px;
-            }
+.science-ccon ul li {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 18px;
+}
+.science-ccon ul li:last-child {
+    margin-bottom: 0px;
+}
+.science-ccon ul li a {
+    font-size: 18px;
+    color: #fff;
+    background: url(../../images/xbg1.png) no-repeat center center;
+    width: 278px;
+    height: 81px;
+    display: block;
+    line-height: 24px;
+    padding-left: 21px;
+    padding-top: 27px;
+}
+.science-ccon ul li a.a2 {
+    padding-right: 39px;
+    padding-top: 16px;
+}
 
 /*footer*/
-
 .footer {
     background: #1e4ab8;
     min-height: 96px;
 }
-
 .fbg {
     background: #1f51d1;
     padding: 0 80px;
     padding-top: 50px;
 }
-
 .f-con {
     position: absolute;
     left: 0px;
@@ -834,219 +773,146 @@ img {
     width: 100%;
     z-index: 1;
 }
-
-
-
 .f-mid {
 }
-
-    .f-mid ul {
-        margin-bottom: 0;
-    }
-
-        .f-mid ul li {
-            float: left;
-            font-size: 16px;
-            color: #fff;
-            line-height: 40px;
-            width: 50%;
-        }
-
+.f-mid ul {
+    margin-bottom: 0;
+}
+.f-mid ul li {
+    float: left;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    width: 50%;
+}
 .f-right {
 }
-
-    .f-right select {
-        width: 100%;
-        line-height: 40px;
-        height: 40px;
-        margin-bottom: 23px;
-    }
-
-
-
-
-
-
-.wc-copy {
+.f-right select {
+    width: 100%;
+    line-height: 40px;
+    height: 40px;
+    margin-bottom: 23px;
 }
-
-    .wc-copy p {
-        font-size: 14px;
-        color: #fff;
-    }
-
-
-/*.wc-copyEnd*/
-
-/*.mnmd-offcanvas__title{
-	background: #b81c22;
-}*/
+.wc-copy p {
+    font-size: 14px;
+    color: #fff;
+}
 .mnmd-offcanvas-close {
     color: #fff;
 }
-
-    .mnmd-offcanvas-close:hover {
-        color: #fff;
-    }
-
+.mnmd-offcanvas-close:hover {
+    color: #fff;
+}
 .navigation--offcanvas li > a:after {
     border-right: 3px solid #1e4fce;
 }
-
 .mnmd-offcanvas__title {
     background: #1e4fce;
 }
-
 /*另一种方法，宽度百分百*/
 /*.navigation--offcanvas .submenu-toggle{
 	width: 100%;
-
 }
 .navigation--offcanvas .submenu-toggle i{
 	right: 0px;
 	left: auto;
 }*/
-.mobile-header-btn {
-    color: #fff;
-    top: 15px;
+
+#login{
+    display: inline;
+    width: 50%;
+    height: 50%;
+    cursor: pointer;
 }
-
-    .mobile-header-btn:hover {
-        color: #fff;
-    }
-
-
-
-
-@media (min-width: 1200px) {
-}
-
 @media (max-width: 1600px) {
-
     .banbg {
         min-height: 650px;
     }
-
     .newsbg {
         margin-top: -150px;
     }
-
     [cut="5em"] {
         clip-path: polygon(0 6.00em, 6.00em 0, calc(100% - 6.00em) 0, 100% 8.00em, 100% calc(100% - 8.00em), calc(100% - 6.00em) 100%, 6.00em 100%, 0 calc(100% - 6.00em))
     }
-
     .bg1 {
         padding-bottom: 110px;
     }
 }
-
 @media (max-width: 1550px) {
     .wc-menu ul li a {
         font-size: 16px;
     }
-
-    /*.new-top span {
-        font-size: 44px;
-    }*/
-
-
     .dbg2 {
         margin-top: -140px;
         background: url(../../images/dimg.jpg) no-repeat center bottom;
         min-height: 658px;
         padding-top: 59px;
     }
-
     .backView2 {
         min-height: 780px;
     }
-
-    .ke-oneone {
+    .science-oneone {
         width: 100%;
     }
 }
-
 @media (max-width: 1500px) {
-    /*.ke-top span {
-        font-size: 28px;
-    }*/
-
     .wc-menu ul li a {
         padding: 0 5px;
         padding-bottom: 30px;
     }
 }
-
-
 @media (max-width: 1440px) {
     .bg1 {
         background: url(../../images/bg1.jpg) repeat-x center 41%;
     }
-
     .b-banner .swiper-container {
         padding-bottom: 50px;
     }
-
-        .b-banner .swiper-container a .ban-text h5 {
-            font-size: 32px;
-        }
-
+    .b-banner .swiper-container a .ban-text h5 {
+        font-size: 32px;
+    }
     .banbg {
         min-height: 600px;
     }
-.backView{
-
-}
     .backView {
         min-height: auto;
     }
-
     .tong-ul ul li a .li-tt p {
         font-size: 16px;
     }
-
     .newsbg {
         margin-top: 50px;
     }
-
     .dbg2 {
         min-height: auto;
         padding-bottom: 50px;
     }
-
-    .keyan {
+    .scientificResearch {
         margin-top: 60px;
     }
-
     .new-top span {
         font-size: 30px;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text h5 {
+    .party-ban .swiper-container .swiper-slide a .ban-text h5 {
         font-size: 28px;
     }
-
-    .ke-top span {
+    .science-top span {
         font-size: 26px;
         padding-top: 35px;
     }
-
-    .ke-top {
+    .science-top {
         min-height: 90px;
     }
-
-        .ke-top img {
-            top: 0px;
-            right: 5px;
-        }
-
+    .science-top img {
+        top: 0px;
+        right: 5px;
+    }
     .f-mid ul li {
         float: none;
         display: block;
         width: 100% !important;
     }
-
-    .ke-ccon {
+    .science-ccon {
         background: none;
         background: rgba(0, 30, 77, 0.55);
         width: 100%;
@@ -1057,392 +923,283 @@ img {
         border-top: none;
         border-left: none;
     }
-
-        .ke-ccon ul li a {
-            width: auto;
-        }
+    .science-ccon ul li a {
+        width: auto;
+    }
 }
-
-
 @media (max-width: 1250px) {
-
-    .ke-ccon ul li a {
+    .science-ccon ul li a {
         font-size: 16px;
     }
 }
-
-
-
-
 @media (max-width: 1200px) {
-    /*中等屏幕设备 桌面*/
-
-    .ke-ccon ul li {
+    .science-ccon ul li {
         text-align: center;
     }
-
-    .ke-oneone {
+    .science-oneone {
         margin-bottom: 30px;
     }
-
     .f-mid ul li {
         width: 40%;
         line-height: 30px;
         margin-bottom: 10px;
     }
-
-        .f-mid ul li:nth-child(1),
-        .f-mid ul li:nth-child(3) {
-            width: 60%;
-        }
-
+    .f-mid ul li:nth-child(1),
+    .f-mid ul li:nth-child(3) {
+        width: 60%;
+    }
     .bg1 {
         padding-top: 100px;
     }
-
     .banbg {
         min-height: 500px;
     }
-
     [cut="5em"] {
         clip-path: polygon(0 4em, 4em 0, calc(100% - 4em) 0, 100% 4em, 100% calc(100% - 4em), calc(100% - 5em) 100%, 4em 100%, 0 calc(100% - 4em));
     }
-
     .tong-ul ul li {
         margin-bottom: 0;
         margin-top: 26px;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text h5 {
+    .party-ban .swiper-container .swiper-slide a .ban-text h5 {
         margin-top: 15px;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text i {
+    .party-ban .swiper-container .swiper-slide a .ban-text i {
         font-size: 16px;
     }
-
     .backView2 {
         background: none;
     }
-
     .new-top span {
         font-size: 28px;
     }
-
-    .ke-top span {
+    .science-top span {
         font-size: 20px;
     }
 }
-
-
 @media (max-width: 991px) {
-    /*小屏幕设备 平板*/
-
     .container {
         width: 94%;
     }
-
     .logo1 img {
     }
-
     .b-banner .swiper-container a .ban-text h5 {
         font-size: 22px;
         line-height: 32px;
     }
-
     .b-con {
         padding-top: 5%;
     }
-
     .banbg {
         min-height: auto;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text h5 {
+    .party-ban .swiper-container .swiper-slide a .ban-text h5 {
         font-size: 22px;
         line-height: 40px;
     }
 }
-
-
-
 @media (max-width: 767px) {
-
-    /*超小屏幕设备 手机*/
     .right-nr table td,
     .right-nr table th {
         white-space: nowrap;
     }
-
     .logo1 {
         padding-bottom: 1px;
         width: 90%;
         text-align: left;
         float: left;
     }
-
-        .logo1 img {
-            padding-top: 6px;
-        }
+    .logo1 img {
+        padding-top: 6px;
+    }
 
     .mobile-header-btn {
         top: 16px;
     }
-
-        .mobile-header-btn i {
-        }
-
-    #img {
-        /*height: 72px;*/
+    .mobile-header-btn i {
     }
-
-    .logo1 img {
-        /*height: 60px;*/
-    }
-
     .container {
         width: 100%;
     }
-
     [cut="5em"] {
         clip-path: polygon(0 0em, 0em 0, calc(100% - 0em) 0, 100% 0em, 100% calc(100% - 0em), calc(100% - 0em) 100%, 0em 100%, 0 calc(100% - 0em));
     }
-
     .b-banner .swiper-container a .ban-text {
         float: none;
         width: 100%;
         padding-top: 1.5rem;
     }
-
     .b-banner .swiper-container .swiper-slide a .ban-img {
         float: none;
         width: 100%;
     }
-
     .banbg {
         margin-top: 5px;
     }
-
     .b-banner .swiper-container a .ban-text h5 {
         font-size: 18px;
         margin-bottom: 10px;
     }
-
     .b-con {
         padding-top: 1%;
     }
-
     [cut="7em"] {
         clip-path: polygon(0 0.00em, 0.00em 0, calc(100% - 0.00em) 0, 100% 4.00em, 100% calc(100% - 2.00em), calc(100% - 2.00em) 100%, 0.00em 100%, 0 calc(100% - 0.00em));
     }
-
     .b-banner .swiper-container a .ban-text p {
         font-size: 14px;
         line-height: 26px;
     }
-
     .b-banner .swiper-container .swiper-pagination {
         text-align: center;
         left: auto;
     }
-
     .b-banner {
         padding-bottom: 20px;
     }
-
-
-
     .news-ban .swiper-container .swiper-pagination {
         bottom: -5px;
     }
-
     .bg1 {
         padding-top: 81px;
     }
-
     .new-top a {
         margin-top: 5px;
         padding-right: 0;
     }
-
     .newsbg {
         margin-top: 30px;
     }
-
     .news-ban a .ban-text span {
         margin: 15px 0;
         line-height: 24px;
     }
-
     .news-ban a .ban-text p {
         min-height: 100px;
     }
-
     .news-ban a i {
         display: none;
     }
-
     .news-ban a {
         text-align: center;
     }
-
-        .news-ban a span,
-        .news-ban a p {
-            text-align: left;
-        }
-
+    .news-ban a span,
+    .news-ban a p {
+        text-align: left;
+    }
     .new-right {
         margin-top: 30px;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text {
+    .party-ban .swiper-container .swiper-slide a .ban-text {
         width: 100%;
         float: none;
         padding-top: 35px;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-img {
+    .party-ban .swiper-container .swiper-slide a .ban-img {
         width: 100%;
         float: none;
     }
-
     .bg1 {
         padding-bottom: 0;
     }
-
     .newsbg {
         padding-bottom: 45px;
     }
-
     .dbg2 {
         margin-top: 0px;
         padding-top: 25px;
     }
-
     .backView2 {
         padding-top: 0;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text h5 {
+    .party-ban .swiper-container .swiper-slide a .ban-text h5 {
         font-size: 18px;
         line-height: 30px;
     }
-
-    .dj-ban .swiper-container .swiper-pagination {
+    .party-ban .swiper-container .swiper-pagination {
         text-align: center;
         left: 0;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text p {
+    .party-ban .swiper-container .swiper-slide a .ban-text p {
         line-height: 26px;
         font-size: 14px;
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text i {
+    .party-ban .swiper-container .swiper-slide a .ban-text i {
         display: none;
     }
-
     [cut="6em"] {
         clip-path: polygon(0 3.00em, 3.00em 0, calc(100% - 3.00em) 0, 100% 0.00em, 100% calc(100% - 0.00em), calc(100% - 0.00em) 100%, 0.00em 100%, 0 calc(100% - 0.00em));
     }
-
-    .dj-ban .swiper-container .swiper-slide a .ban-text p {
+    .party-ban .swiper-container .swiper-slide a .ban-text p {
         min-height: 100px;
     }
-
-    .dj-ban .swiper-container {
+    .party-ban .swiper-container {
         padding-bottom: 50px;
     }
-
     .dbg2 {
         padding-bottom: 20px;
     }
-
-    .keyan {
+    .scientificResearch {
         margin-top: 20px;
     }
-
-    .ke-con {
+    .science-con {
         padding-top: 25px;
     }
-
     .bg2 {
         padding-bottom: 50px;
         background-size: cover;
     }
-
     .new-top span {
         font-size: 20px;
     }
-
-
-    .keyan {
+    .scientificResearch {
         padding: 0 20px;
     }
-
-    .ke-top {
+    .science-top {
         min-height: 50px;
     }
-
-        .ke-top span {
-            padding-top: 12px;
-            font-size: 18px;
-        }
-
-        .ke-top img {
-            width: 16%;
-        }
-
-    .ke-ccon ul li a {
+    .science-top span {
+        padding-top: 12px;
+        font-size: 18px;
+    }
+    .science-top img {
+        width: 16%;
+    }
+    .science-ccon ul li a {
         font-size: 16px;
     }
-
-
     [cut="55em"] {
         clip-path: polygon(0 1.00em, 1.00em 0, calc(100% - 1.00em) 0, 100% 1.00em, 100% calc(100% - 0.00em), calc(100% - 0.00em) 100%, 0.00em 100%, 0 calc(100% - 0.00em));
     }
-
     .f-con {
         position: relative;
     }
-
-    .f-mid ul li {
-        float: none;
+    .f-mid ul li {float: none;
         display: block;
         width: 100% !important;
         font-size: 14px;
     }
-
-
-
     .fbg {
         padding: 20px;
     }
-
     .f-mid {
         margin-top: 20px;
     }
-
     .backView {
         margin-top: -35px;
     }
-
     .tong-ul ul li a .li-tt {
         width: calc(100% - 108px);
     }
 }
-
-
 @media (max-width: 600px) {
     .mobile-header-btn {
         top: 10px;
     }
-
-        .mobile-header-btn i {
-            line-height: 50px;
-        }
-
-    .ke-ccon ul li a.a2 {
+    .mobile-header-btn i {
+        line-height: 50px;
+    }
+    .science-ccon ul li a.a2 {
         padding-right: 0px;
         padding-top: 27px;
         padding-left: 0px;

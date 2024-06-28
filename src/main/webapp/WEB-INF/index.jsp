@@ -1,6 +1,10 @@
+<%@ page pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
 <head>
+    <c:url var="base" value="/"/>
+    <base href="${base}">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
@@ -8,7 +12,8 @@
     <title>首页 - 东北林业大学软件工程专业</title>
     <meta name="keywords" content="东北林业大学软件工程专业" />
     <meta name="description" content="东北林业大学软件工程专业" />
-    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
 
 
     <link href="Assets/css/web/swiper.min.css" rel="stylesheet" />
@@ -17,12 +22,11 @@
     <link href="Assets/css/web/animate.css" rel="stylesheet" />
 
     <link href="Assets/css/web/vendors.css" rel="stylesheet" />
-<!--    <link href="Assets/css/web/style.css" rel="stylesheet" />-->
     <link href="Assets/css/web/offcanvas.css" rel="stylesheet">
-    <link href="Assets/css/web/iconfont.css" rel="stylesheet" />
+<!--    <link href="Assets/css/web/iconfont.css" rel="stylesheet" />-->
 
-    <link href="Assets/css/web/common.css?" rel="stylesheet" />
-    <link href="Assets/css/web/index.css?" rel="stylesheet" />
+    <link href="Assets/css/web/common.css" rel="stylesheet" />
+    <link href="Assets/css/web/index.css" rel="stylesheet" />
 
     <link href="Assets/css/web/webpager.css" rel="stylesheet" />
 </head>
@@ -34,10 +38,10 @@
                 <h2>搜索</h2>
                 <div class="search-form">
                     <input type="text" name="Search" class="form-text" placeholder="输入关键词..." id="search-input" autocomplete="off">
-                    <button type="button" class="form-submit"><i class="fa fa-search"></i></button>
+                    <button type="button" class="form-submit"><img src="Assets/images/searchup.png" class="searchup"></button>
                 </div>
                 <div class="close">
-                    关闭<i class="iconfont icon-close"> </i>
+                    关闭✕ </i>
                 </div>
             </div>
         </div>
@@ -50,9 +54,9 @@
                         <a href="/" class=" logo1">
                             <img src="Assets/images/logodouble.png" id="img" class="img-responsive">
                         </a>
-                        <a href="#mnmd-offcanvas-mobile" class="offcanvas-menu-toggle is-active mobile-header-btn js-mnmd-offcanvas-toggle">
-                            <i class="iconfont icon-wangzhandaohang mdicon--last hidden-xs"></i>
-                            <i class="iconfont icon-wangzhandaohang visible-xs-inline-block"></i>
+                        <a href="#mnmd-offcanvas" class="offcanvas-menu-toggle is-active offcanvas-header-btn js-mnmd-offcanvas-toggle">
+                            <img src="Assets/images/unfoldIcon.png" class="iconfont icon-unfold mdicon--last hidden-xs">
+                            <img src="Assets/images/unfoldIcon.png" class="iconfont icon-unfold visible-xs-inline-block">
                         </a>
 
                     </div>
@@ -61,7 +65,7 @@
         </nav>
 
 
-        <div id="mnmd-offcanvas-mobile" class="mnmd-offcanvas js-mnmd-offcanvas js-perfect-scrollbar">
+        <div id="mnmd-offcanvas" class="mnmd-offcanvas js-mnmd-offcanvas js-perfect-scrollbar">
             <div class="mnmd-offcanvas__title">
                 <h2 class="site-logo">
                     <a href="/">
@@ -70,61 +74,59 @@
                 </h2>
                 <ul class="social-list list-horizontal">
                 </ul>
-                <a href="#mnmd-offcanvas-mobile" class="mnmd-offcanvas-close js-mnmd-offcanvas-close" aria-label="Close"><span aria-hidden="true">&#10005;</span></a>
+                <a href="#mnmd-offcanvas" class="mnmd-offcanvas-close js-mnmd-offcanvas-close" aria-label="Close"><span aria-hidden="true">&#10005;</span></a>
             </div>
             <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
             <div id="offcanvas-menu" class="menu-main-menu-container">
     <ul class="navigation navigation--offcanvas">
-        <li class="menu-item"><a href="/" aria-current="page">首页</a></li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/welcome" target="_self">专业概况</a>
+        <li class="menu-item"><a href="Data/list/welcome.html" aria-current="page">首页</a></li>
+        <li class="menu-item menu-item-has-children "><a href="Data/List/welcome.html" target="_self">专业概况</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="/Data/List/welcome">欢迎辞</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/about-se">专业简介</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/leadership">专业领导</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/administrator">机构设置</a></li><li class="menu-item"><a target="_self" href="/Data/List/Previous-leaders">历任领导</a></li>
+                <li class="menu-item"><a target="_self" href="Data/List/welcome.html">欢迎辞</a></li>
+                <li class="menu-item"><a target="_self" href="Data/List/welcome.html">专业简介</a></li>
             </ul>
         </li>
         <li class="menu-item menu-item-has-children "><a href="/Data/List/jcrc" target="_self">师资队伍</a>
             <ul class="sub-menu" style="display: block;">
                 <li class="menu-item"><a target="_self" href="/Data/List/jcrc">杰出人才</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/qncj">青年人才</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/people">教师名录</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/bsh">博士后</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/txjs">荣退教师</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/rczp">人才招聘</a></li>
+                <li class="menu-item"><a target="_self" href="">青年人才</a></li>
+                <li class="menu-item"><a target="_self" href="">教师名录</a></li>
+                <li class="menu-item"><a target="_self" href="">博士后</a></li>
+                <li class="menu-item"><a target="_self" href="">荣退教师</a></li>
+                <li class="menu-item"><a target="_self" href="">人才招聘</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/about-research" target="_self">科学研究</a>
+        <li class="menu-item menu-item-has-children "><a href="/Data/List/about-research.html" target="_self">科学研究</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="/Data/List/about-research">科研概况</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/yjfx">研究方向</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/research-kyjd">科研基地</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/kycg">科研成果</a></li>
+                <li class="menu-item"><a target="_self" href="">科研概况</a></li>
+                <li class="menu-item"><a target="_self" href="">研究方向</a></li>
+                <li class="menu-item"><a target="_self" href="">科研基地</a></li>
+                <li class="menu-item"><a target="_self" href="">科研成果</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/zyjs" target="_self">人才培养</a>
+        <li class="menu-item menu-item-has-children "><a href="" target="_self">人才培养</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="/Data/List/zyjs">本科生培养</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/yjs">研究生培养</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/jxhj1">教学获奖</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/jxjd1">教学基地</a></li>
+                <li class="menu-item"><a target="_self" href="">本科生培养</a></li>
+                <li class="menu-item"><a target="_self" href="">研究生培养</a></li>
+                <li class="menu-item"><a target="_self" href="">教学获奖</a></li>
+                <li class="menu-item"><a target="_self" href="">教学基地</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/xyzx" target="_self">校友会</a>
+        <li class="menu-item menu-item-has-children "><a href="" target="_self">校友会</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="/Data/List/xyzx">校友资讯</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/xyfw">校友服务</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/xyfc1">校友风采</a></li>
+                <li class="menu-item"><a target="_self" href="">校友资讯</a></li>
+                <li class="menu-item"><a target="_self" href="">校友服务</a></li>
+                <li class="menu-item"><a target="_self" href="">校友风采</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/about-party" target="_self">党建工作</a>
+        <li class="menu-item menu-item-has-children "><a href="" target="_self">党建工作</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="/Data/List/about-party">党总支概况</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/zbfc">支部风采</a></li>
-                <li class="menu-item"><a target="_self" href="/Data/List/activity">党建活动</a></li>
+                <li class="menu-item"><a target="_self" href="">党总支概况</a></li>
+                <li class="menu-item"><a target="_self" href="">支部风采</a></li>
+                <li class="menu-item"><a target="_self" href="">党建活动</a></li>
             </ul>
         </li>
-        <li class="menu-item  "><a href="/Data/List/Contact" target="_self">联系我们</a></li>
+        <li class="menu-item  "><a href="/Data/List/Contact.html" target="_self">联系我们</a></li>
     </ul>
 
 
@@ -156,81 +158,81 @@
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="/Data/List/welcome" data-url="">欢迎辞</a></li>
-                        <li><a target="_self" href="/Data/List/about-se" data-url="">专业简介</a></li>
-                        <li><a target="_self" href="/Data/List/leadership" data-url="">专业领导</a></li>
-                        <li><a target="_self" href="/Data/List/administrator" data-url="">机构设置</a></li>
-                        <li><a target="_self" href="/Data/List/Previous-leaders" data-url="">历任领导</a></li>
+                        <li><a target="_self" href="/Data/List/welcome.html" data-url="">欢迎辞</a></li>
+                        <li><a target="_self" href="/Data/List/about-se.html" data-url="">专业简介</a></li>
+                        <li><a target="_self" href="" data-url="">专业领导</a></li>
+                        <li><a target="_self" href="" data-url="">机构设置</a></li>
+                        <li><a target="_self" href="" data-url="">历任领导</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/jcrc" data-url="">师资队伍</a>
+            <a target="_self" href="/Data/List/jcrc.html" data-url="">师资队伍</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="/Data/List/jcrc" data-url="">杰出人才</a></li>
-                        <li><a target="_self" href="/Data/List/qncj" data-url="">青年人才</a></li>
-                        <li><a target="_self" href="/Data/List/people" data-url="">教师名录</a></li>
-                        <li><a target="_self" href="/Data/List/bsh" data-url="">博士后</a></li>
-                        <li><a target="_self" href="/Data/List/txjs" data-url="">荣退教师</a></li>
-                        <li><a target="_self" href="/Data/List/rczp" data-url="">人才招聘</a></li>
+                        <li><a target="_self" href="" data-url="">杰出人才</a></li>
+                        <li><a target="_self" href="" data-url="">青年人才</a></li>
+                        <li><a target="_self" href="" data-url="">教师名录</a></li>
+                        <li><a target="_self" href="" data-url="">博士后</a></li>
+                        <li><a target="_self" href="" data-url="">荣退教师</a></li>
+                        <li><a target="_self" href="" data-url="">人才招聘</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/about-research" data-url="">科学研究</a>
+            <a target="_self" href="/Data/List/about-research.html" data-url="">科学研究</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="/Data/List/about-research" data-url="">科研概况</a></li>
-                        <li><a target="_self" href="/Data/List/yjfx" data-url="">研究方向</a></li>
-                        <li><a target="_self" href="/Data/List/research-kyjd" data-url="">科研基地</a></li>
-                        <li><a target="_self" href="/Data/List/kycg" data-url="">科研成果</a></li>
+                        <li><a target="_self" href="/Data/List/about-research.html" data-url="">科研概况</a></li>
+                        <li><a target="_self" href="" data-url="">研究方向</a></li>
+                        <li><a target="_self" href="" data-url="">科研基地</a></li>
+                        <li><a target="_self" href="" data-url="">科研成果</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/zyjs" data-url="">人才培养</a>
+            <a target="_self" href="" data-url="">人才培养</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/rc-1.jpg" cut="13em" />
                     <ul>
-                            <li><a target="_self" href="/Data/List/zyjs" data-url="">本科生培养</a></li>
-                            <li><a target="_self" href="/Data/List/yjs" data-url="">研究生培养</a></li>
-                            <li><a target="_self" href="/Data/List/jxhj1" data-url="">教学获奖</a></li>
-                            <li><a target="_self" href="/Data/List/jxjd1" data-url="">教学基地</a></li>
+                            <li><a target="_self" href="" data-url="">本科生培养</a></li>
+                            <li><a target="_self" href="" data-url="">研究生培养</a></li>
+                            <li><a target="_self" href="" data-url="">教学获奖</a></li>
+                            <li><a target="_self" href="" data-url="">教学基地</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/xyzx" data-url="">校友会</a>
+            <a target="_self" href="" data-url="">校友会</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/xy-1.png" cut="13em" />
                     <ul>
-                            <li><a target="_self" href="/Data/List/xyzx" data-url="">校友资讯</a></li>
-                            <li><a target="_self" href="/Data/List/xyfw" data-url="">校友服务</a></li>
-                            <li><a target="_self" href="/Data/List/xyfc1" data-url="">校友风采</a></li>
+                            <li><a target="_self" href="" data-url="">校友资讯</a></li>
+                            <li><a target="_self" href="" data-url="">校友服务</a></li>
+                            <li><a target="_self" href="" data-url="">校友风采</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/about-party" data-url="">党建工作</a>
+            <a target="_self" href="/Data/List/about-party.html" data-url="">党建工作</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
                     <ul>
-                            <li><a target="_self" href="/Data/List/about-party" data-url="">党总支概况</a></li>
-                            <li><a target="_self" href="/Data/List/zbfc" data-url="">支部风采</a></li>
-                            <li><a target="_self" href="/Data/List/activity" data-url="">党建活动</a></li>
+                            <li><a target="_self" href="/Data/List/about-party.html" data-url="">党总支概况</a></li>
+                            <li><a target="_self" href="" data-url="">支部风采</a></li>
+                            <li><a target="_self" href="" data-url="">党建活动</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/Contact" data-url="">联系我们</a>
+            <a target="_self" href="/Data/List/Contact.html" data-url="">联系我们</a>
 
         </li>
 </ul>
@@ -247,7 +249,7 @@
     <div class="backView">
         <div class="banbg pos" cut="5em">
             <!--<div class="bbg">
-                <img src="/Assets/images/ban1.jpg" cut="5em"/>
+                <img src="Assets/images/ban1.jpg" cut="5em"/>
             </div>-->
             <div class="b-con">
                 <div class="container">
@@ -263,7 +265,7 @@
                                                 </div>
                                                 <div class="ban-img ">
                                                     <div class="ban-img1 pos">
-                                                        <img src="Assets/userfiles/images/news/examples.jpg"  cut="7em" />
+                                                        <img src="Assets/userfiles/images/news/examples.jpg" cut="7em" />
                                                         <div class="boredr2" cut="7em"></div>
                                                     </div>
                                                     <!--ban-img1 end-->
@@ -280,7 +282,7 @@
                                             </div>
                                             <div class="ban-img ">
                                                 <div class="ban-img1 pos">
-                                                    <img src="Assets/userfiles/images/news/examples.jpg"  cut="7em" />
+                                                    <img src="Assets/userfiles/images/news/examples.jpg" cut="7em" />
                                                     <div class="boredr2" cut="7em"></div>
                                                 </div>
                                                 <!--ban-img1 end-->
@@ -297,7 +299,7 @@
                                             </div>
                                             <div class="ban-img ">
                                                 <div class="ban-img1 pos">
-                                                    <img src="Assets/userfiles/images/news/examples.jpg"  cut="7em" />
+                                                    <img src="Assets/userfiles/images/news/examples.jpg" cut="7em" />
                                                     <div class="boredr2" cut="7em"></div>
                                                 </div>
                                                 <!--ban-img1 end-->
@@ -345,7 +347,7 @@
                                         <div class="swiper-wrapper pos">
                                                 <div class="swiper-slide">
                                                     <a href="/Data/View/599" target="_self">
-                                                        <img src="Assets/userfiles/sys_fc5a3ee3-025c-4c90-964f-4e52f98a5589/images/%E4%BF%A1%E6%81%AF%E4%B8%AD%E5%BF%83/%E8%BD%AF%E9%99%A2%E6%96%B0%E9%97%BB/2024/2024-5_23-%E5%9B%BE%E7%89%870.png" cut="61em" />
+                                                        <img src="Assets/userfiles/" cut="61em" />
                                                         <div class="ban-text">
                                                             <span>11111111</span>
                                                             <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor omnis quo veniam. A blanditiis dignissimos hic quis quos sint?</p>
@@ -356,7 +358,7 @@
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <a href="/Data/View/597" target="_self">
-                                                        <img src="Assets/userfiles/" cut="61em" />
+                                                        <img src="Assets/userfiles" cut="61em" />
                                                         <div class="ban-text">
                                                             <span>2222222</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa, deserunt mollitia non quam quidem quos rem saepe sequi veritatis.</p>
@@ -366,7 +368,7 @@
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <a href="/Data/View/596" target="_self">
-                                                        <img src="Assets/userfiles/" cut="61em" />
+                                                        <img src="Assets/userfiles" cut="61em" />
                                                         <div class="ban-text">
                                                             <span>3333333</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut eligendi enim id inventore libero nostrum, quae sapiente sequi voluptatibus?</p>
@@ -468,7 +470,7 @@
     <div class="backView backView2">
         <div class="dbg2" cut="5em">
             <!--<div class="dbg">
-                <img src="/Assets/images/.jpg" cut="5em"/>
+                <img src="Assets/images/.jpg" cut="5em"/>
             </div>-->
             <div class="d-banner">
                 <div class="container">
@@ -478,7 +480,7 @@
                                 <div class="clearfix"></div>
                             </div>
                             <!--/new-top end-->
-                            <div class="dj-ban">
+                            <div class="party-ban">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper pos">
                                                 <div class="swiper-slide ">
@@ -490,7 +492,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images/" cut="6em" />
+                                                                <img src="Assets/userfiles/images" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -511,7 +513,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images/" cut="6em" />
+                                                                <img src="Assets/userfiles/images" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -531,7 +533,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images/" cut="6em" />
+                                                                <img src="Assets/userfiles/images" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -554,7 +556,7 @@
                                         </div>
                                     </div>
                             </div>
-                            <!--dj-ban end-->
+                            <!--party-ban end-->
 
                         </div>
                         <!--/d-ban end-->
@@ -565,152 +567,125 @@
         </div>
         <!--/dang end-->
     </div>
-    <div class="keyan">
+    <div class="scientificResearch">
         <div class="container">
             <div class="new-top ">
                 <span>科研方向</span>
                 <div class="clearfix"></div>
             </div>
             <!--new-top end-->
-            <div class="ke-con">
+            <div class="science">
                 <div class="row">
-                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
-                            <div class="ke-oneone">
-                                <div class="ke-top" cut="0.5em">
+                        <div class="science-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="science-oneone">
+                                <div class="science-top" cut="0.5em">
                                     <a href="/Data/List/yjfx" target="_self">
-
                                         <span>系统软件</span>
                                         <img src="Assets/images/kic1.png" />
                                     </a>
                                 </div>
-                                <!--ke-top end-->
-                                <div class="ke-ccon">
+                                <!--science-top end-->
+                                <div class="science-ccon">
                                         <ul>
-                                                <li>
-                                                    <a href="/Data/View/247" target="_self" class="">并行与分布式系统实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/246" target="_self" class="">可扩展计算与系统实验室</a>
-                                                </li>
+                                            <li><a href="/Data/View/246" target="_self" class="">923创新实验室</a></li>
+                                            <li><a href="/Data/View/247" target="_self" class="">并行与分布式系统实验室</a></li>
                                         </ul>
-                                    <div class="ke-more">
+                                    <div class="science-more">
                                         <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
-
-                                <!--ke-ccone end-->
+                                <!--science-ccone end-->
                             </div>
-                            <!--ke-oneone end-->
+                            <!--science-oneone end-->
                         </div>
-                        <!--ke-one end-->
+                        <!--science-one end-->
 
-                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
-                            <div class="ke-oneone">
-                                <div class="ke-top" cut="0.5em">
+                        <div class="science-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="science-oneone">
+                                <div class="science-top" cut="0.5em">
                                     <a href="/Data/List/yjfx" target="_self">
-
                                         <span>工业软件</span>
                                         <img src="Assets/images/kic2.png" />
                                     </a>
                                 </div>
-                                <!--ke-top end-->
-                                <div class="ke-ccon">
+                                <!--science-top end-->
+                                <div class="science-ccon">
                                         <ul>
-                                                <li>
-                                                    <a href="/Data/View/250" target="_self" class="">信息系统技术实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/249" target="_self" class="">RFID与物联网实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/248" target="_self" class="">智能软件工程实验室</a>
-                                                </li>
+                                            <li><a href="/Data/View/250" target="_self" class="">信息系统技术实验室</a></li>
+                                            <li><a href="/Data/View/249" target="_self" class="">925实验室</a></li>
+                                            <li><a href="/Data/View/248" target="_self" class="">智能软件工程实验室</a></li>
                                         </ul>
-                                    <div class="ke-more">
+                                    <div class="science-more">
                                         <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
 
-                                <!--ke-ccone end-->
+                                <!--science-ccone end-->
                             </div>
-                            <!--ke-ccone end-->
+                            <!--science-ccone end-->
                         </div>
-                        <!--ke-one end-->
+                        <!--science-one end-->
 
-                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
-                            <div class="ke-oneone">
-                                <div class="ke-top" cut="0.5em">
+                        <div class="science-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="science-oneone">
+                                <div class="science-top" cut="0.5em">
                                     <a href="/Data/List/yjfx" target="_self">
-
                                         <span>数据服务</span>
                                         <img src="Assets/images/kic3.png" />
                                     </a>
                                 </div>
-                                <!--ke-top end-->
-                                <div class="ke-ccon">
+                                <!--science-top end-->
+                                <div class="science-ccon">
                                         <ul>
-                                                <li>
-                                                    <a href="/Data/View/253" target="_self" class="">数据服务实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/252" target="_self" class="">REINS实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/251" target="_self" class="">数字艺术实验室</a>
-                                                </li>
+                                            <li><a href="/Data/View/253" target="_self" class="">数据服务实验室</a></li>
+                                            <li><a href="/Data/View/251" target="_self" class="">数字艺术实验室</a></li>
                                         </ul>
-                                    <div class="ke-more">
+                                    <div class="science-more">
                                         <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
 
-                                <!--ke-ccone end-->
+                                <!--science-ccone end-->
                             </div>
-                            <!--ke-ccone end-->
+                            <!--science-ccone end-->
                         </div>
-                        <!--ke-one end-->
+                        <!--science-one end-->
 
-                        <div class="ke-one col-lg-3 col-md-6 col-sm-6">
-                            <div class="ke-oneone">
-                                <div class="ke-top" cut="0.5em">
+                        <div class="science-one col-lg-3 col-md-6 col-sm-6">
+                            <div class="science-oneone">
+                                <div class="science-top" cut="0.5em">
                                     <a href="/Data/List/yjfx" target="_self">
-
                                         <span>独立PI</span>
                                         <img src="Assets/images/kic4.png" />
                                     </a>
                                 </div>
-                                <!--ke-top end-->
-                                <div class="ke-ccon">
+                                <!--science-top end-->
+                                <div class="science-ccon">
                                         <ul>
-                                                <li>
-                                                    <a href="/Data/View/255" target="_self" class="a2">分布式计算与智能信息处理实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/254" target="_self" class="">自适应分布计算实验室</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/Data/View/525" target="_self" class="">BASICS实验室</a>
-                                                </li>
+                                            <li><a href="/Data/View/255" target="_self" class="a2">分布式计算与智能信息处理实验室</a></li>
+                                            <li><a href="/Data/View/254" target="_self" class="">自适应分布计算实验室</a></li>
+                                            <li><a href="/Data/View/525" target="_self" class="">529实验室</a></li>
+
                                         </ul>
-                                    <div class="ke-more">
+                                    <div class="science-more">
                                         <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
 
-                                <!--ke-ccone end-->
+                                <!--science-ccone end-->
                             </div>
-                            <!--ke-ccone end-->
+                            <!--science-ccone end-->
                         </div>
-                        <!--ke-one end-->
+                        <!--science-one end-->
                     <div class="clearfix"></div>
                 </div>
                 <div class="clearfix"></div>
             </div>
-            <!--ke-con end-->
+            <!--science-con end-->
 
         </div>
     </div>
-    <!--keyan end-->
+    <!--scienceyan end-->
 
 </div>
 <!--bg2 end-->
@@ -738,16 +713,16 @@
 	<li><img src="Assets/images/fic3.png" />&nbsp;电话：###-########</li>
 	<li><img src="Assets/images/fic2.png" /> 传真：###-########</li>
 	<li><img src="Assets/images/fic4.png" /> 邮编：#####</li>
+    <li id="login"><img src="Assets/images/login.png"/> 管理员登录</li>
+
 </ul>
                         </div>
                         <!--f-mid end-->
-
-
-
                     </div>
                     <div class="wc-copy">
                         <p>版权所有@东北林业大学软件工程专业  </p>
                     </div>
+                    <div class="login"></div>
                 </div>
             </div>
         </div>
@@ -758,20 +733,14 @@
     <!-- box End-->
 
 
-    <div id="AntiForgeryToken" style="display: none;">
-        <input name="__RequestVerificationToken" type="hidden" value="u5G1IuTKQyC1nfPh49i87lvcMAp7T9J1uFGKSJComblnNCj2oeynRvQAvW-Kz63wBFUgGrnHkGkmJYW3XheLfeQSoKiUEXmND2rntKCT-S_aJC-WgYbm8IPkqipPCRGgCGzOJvXsXdLx1zX8W84ZC4c1nMCAd5donfCx_1yvQ201" />
-    </div>
-
-    <div id="msg" style="display:none;">
-        <img src="Assets/img/loading.gif" style="vertical-align: bottom" />&nbsp;&nbsp;loading......
-    </div>
+<!--    <div id="msg" style="display:none;">-->
+<!--        <img src="Assets/img/loading.gif" style="vertical-align: bottom" />&nbsp;&nbsp;loading......-->
+<!--    </div>-->
 
     <script src="Assets/js/jquery.min.js"></script>
     <script src="Assets/js/layer/layer.js"></script>
     <script src="Assets/js/scrollToTop.js" type="text/javascript"></script>
 
-    <!-- jquery.unobtrusive ajax表单提交 -->
-    <script src="Assets/js/jquery.unobtrusive-ajax.min.js"></script>
     <script src="Assets/js/jquery.validate.min.js"></script><!--    表单验证-->
 
     <script src="Assets/js/bootstrap.min.js"></script>
@@ -783,8 +752,10 @@
     <script src="Assets/js/scripts.js"></script>
     <script src="Assets/js/swiper-3.4.5.min.js"></script><!--    主要用于移动设备图片轮播库-->
 
+    <script src="Assets/js/jquery.blockUI.js"></script><!--    在页面上创建一个遮罩层（mask），它可以阻止用户与页面的交互-->
 
-    <script type="text/javascript">
+
+    <script>
             //登录
             $(".logincss").click(function () {
                 var href = $(this).data("url");
@@ -800,8 +771,7 @@
         scrolltotop.init();
     </script>
 
-    <script src="Assets/js/jquery.blockUI.js"></script><!--    在页面上创建一个遮罩层（mask），它可以阻止用户与页面的交互-->
-    <script type="text/javascript">
+    <script>
         function BlockPage() {
             $.blockUI({
                 message: $("#msg").html(),
@@ -869,7 +839,7 @@
 
         });
         if (window.innerWidth <= 767) {
-            let swiper = new Swiper(".dj-ban .swiper-container", {
+            let swiper = new Swiper(".party-ban .swiper-container", {
                 grabCursor: true,//抓取光标
                 effect: "creative",
                 creativeEffect: { //创意效果
@@ -882,24 +852,24 @@
                     },
                 },
                 pagination: {
-                    el: '.dj-ban .swiper-pagination',
+                    el: '.party-ban .swiper-pagination',
                     clickable: true,
                 }
             });
         } else {
-            let swiper = new Swiper('.dj-ban .swiper-container', {
+            let swiper = new Swiper('.party-ban .swiper-container', {
                 spaceBetween: 0,
                 speed: 1000,
                 //loop: true,
                 effect: 'cube',
                 autoplay: false,
                 pagination: { //分页器
-                    el: '.dj-ban .swiper-pagination',
+                    el: '.party-ban .swiper-pagination',
                     clickable: true,//用户点击
                 },
                 navigation: {
-                    nextEl: ".dj-ban .swiper-button-next",
-                    prevEl: ".dj-ban .swiper-button-prev",
+                    nextEl: ".party-ban .swiper-button-next",
+                    prevEl: ".partyparty-ban .swiper-button-prev",
                 },
             });
         }
@@ -949,8 +919,8 @@
                     $(".bg2").addClass("animated  fadeInDown");
                 }
 
-                if ($(".keyan").offset().top - $(window).scrollTop() < $(window).height()) {
-                    $(".keyan").addClass("animated  fadeInDown");
+                if ($(".scientificResearch").offset().top - $(window).scrollTop() < $(window).height()) {
+                    $(".scientificResearch").addClass("animated  fadeInDown");
                 }
                 if ($(".fbg").offset().top - $(window).scrollTop() < $(window).height()) {
                     $(".fbg").addClass("animated  fadeInDown");
