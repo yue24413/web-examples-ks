@@ -1,7 +1,6 @@
 package com.controller;
 
-import com.service.UserService;
-import jakarta.servlet.RequestDispatcher;
+import com.service.NewService;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -14,8 +13,8 @@ import java.io.IOException;
 public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        var users = UserService.listUser();
-//        req.setAttribute("users", users);
+        var news = NewService.listNew();
+        req.setAttribute("news", news);
         req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
     }
 }

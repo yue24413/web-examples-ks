@@ -6,8 +6,8 @@ public class New {
     private int id;
     private String name;/*新闻标题*/
     private String info;/*新闻信息*/
-    private LocalDateTime createdAt;
-    private LocalDateTime updatedAt;
+    private LocalDateTime insertTime;
+    private LocalDateTime updatedTime;
 
     public String getInfo() {
         return info;
@@ -33,19 +33,20 @@ public class New {
         this.name = name;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
+    public LocalDateTime getInsertTime() {
+        return insertTime;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public LocalDateTime getUpdatedTime() {
+        return updatedTime;
     }
 
-    public LocalDateTime getUpdatedAt() {
-        return updatedAt;
+    public void setUpdatedTime(LocalDateTime updatedTime) {
+        this.updatedTime = updatedTime;
     }
 
-    public void setUpdatedAt(LocalDateTime updatedAt) {
-        this.updatedAt = updatedAt;
+    public void setInsertTime(LocalDateTime insertTime) {
+        this.insertTime = insertTime;
+
     }
 }

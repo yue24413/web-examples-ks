@@ -1,5 +1,6 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<jsp:useBean id="news" scope="request" type="java.util.List<com.entity.New>"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +13,6 @@
     <title>首页 - 东北林业大学软件工程专业</title>
     <meta name="keywords" content="东北林业大学软件工程专业" />
     <meta name="description" content="东北林业大学软件工程专业" />
-
-
-
-
     <link href="Assets/css/web/swiper.min.css" rel="stylesheet" />
     <link href="Assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
     <link href="Assets/css/web/animated-border.min.css" rel="stylesheet" />
@@ -25,12 +22,11 @@
     <link href="Assets/css/web/offcanvas.css" rel="stylesheet">
 <!--    <link href="Assets/css/web/iconfont.css" rel="stylesheet" />-->
 
+    <link href="//unpkg.com/layui@2.9.13/dist/css/layui.css" rel="stylesheet">
     <link href="Assets/css/web/common.css" rel="stylesheet" />
     <link href="Assets/css/web/index.css" rel="stylesheet" />
-
     <link href="Assets/css/web/webpager.css" rel="stylesheet" />
 </head>
-
 <body>
     <div class="box">
         <div class="search-box hidden-xs hidden-sm hidden-md">
@@ -58,13 +54,10 @@
                             <img src="Assets/images/unfoldIcon.png" class="iconfont icon-unfold mdicon--last hidden-xs">
                             <img src="Assets/images/unfoldIcon.png" class="iconfont icon-unfold visible-xs-inline-block">
                         </a>
-
                     </div>
                 </div>
             </div>
         </nav>
-
-
         <div id="mnmd-offcanvas" class="mnmd-offcanvas js-mnmd-offcanvas js-perfect-scrollbar">
             <div class="mnmd-offcanvas__title">
                 <h2 class="site-logo">
@@ -79,16 +72,16 @@
             <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
             <div id="offcanvas-menu" class="menu-main-menu-container">
     <ul class="navigation navigation--offcanvas">
-        <li class="menu-item"><a href="Data/list/welcome.html" aria-current="page">首页</a></li>
-        <li class="menu-item menu-item-has-children "><a href="Data/List/welcome.html" target="_self">专业概况</a>
+        <li class="menu-item"><a href="List/welcome.html" target="_self">首页</a></li>
+        <li class="menu-item menu-item-has-children "><a href="List/welcome.html" target="_self">专业概况</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="Data/List/welcome.html">欢迎辞</a></li>
-                <li class="menu-item"><a target="_self" href="Data/List/welcome.html">专业简介</a></li>
+                <li class="menu-item"><a target="_self" href="List/welcome.html">欢迎辞</a></li>
+                <li class="menu-item"><a target="_self" href="List/welcome.html">专业简介</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/jcrc" target="_self">师资队伍</a>
+        <li class="menu-item menu-item-has-children "><a href="List/teachers.html" target="_self">师资队伍</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="/Data/List/jcrc">杰出人才</a></li>
+                <li class="menu-item"><a target="_self" href="">杰出人才</a></li>
                 <li class="menu-item"><a target="_self" href="">青年人才</a></li>
                 <li class="menu-item"><a target="_self" href="">教师名录</a></li>
                 <li class="menu-item"><a target="_self" href="">博士后</a></li>
@@ -96,7 +89,7 @@
                 <li class="menu-item"><a target="_self" href="">人才招聘</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="/Data/List/about-research.html" target="_self">科学研究</a>
+        <li class="menu-item menu-item-has-children "><a href="List/about-research.html" target="_self">科学研究</a>
             <ul class="sub-menu" style="display: block;">
                 <li class="menu-item"><a target="_self" href="">科研概况</a></li>
                 <li class="menu-item"><a target="_self" href="">研究方向</a></li>
@@ -135,9 +128,6 @@
 
         </div>
         <!-- end-->
-
-
-
 <div class="bg1">
     <div class="topp hidden-xs hidden-sm hidden-md">
         <div class="container container2">
@@ -153,13 +143,13 @@
                     <div class="wc-menu ">
 
     <ul>
-        <li><a href="/">首页</a></li>
-        <li><a data-id="" target="_self" href="/Data/List/welcome" data-url="">专业概况</a>
+        <li><a href="List/welcome.html">首页</a></li>
+        <li><a data-id="" target="_self" href="List/welcome.html" data-url="">专业概况</a>
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="/Data/List/welcome.html" data-url="">欢迎辞</a></li>
-                        <li><a target="_self" href="/Data/List/about-se.html" data-url="">专业简介</a></li>
+                        <li><a target="_self" href="List/welcome.html" data-url="">欢迎辞</a></li>
+                        <li><a target="_self" href="List/welcome.html" data-url="">专业简介</a></li>
                         <li><a target="_self" href="" data-url="">专业领导</a></li>
                         <li><a target="_self" href="" data-url="">机构设置</a></li>
                         <li><a target="_self" href="" data-url="">历任领导</a></li>
@@ -167,7 +157,7 @@
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/jcrc.html" data-url="">师资队伍</a>
+            <a target="_self" href="List/teachers.html" data-url="">师资队伍</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
@@ -182,12 +172,12 @@
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/about-research.html" data-url="">科学研究</a>
+            <a target="_self" href="List/about-research.html" data-url="">科学研究</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="/Data/List/about-research.html" data-url="">科研概况</a></li>
+                        <li><a target="_self" href="List/about-research.html" data-url="">科研概况</a></li>
                         <li><a target="_self" href="" data-url="">研究方向</a></li>
                         <li><a target="_self" href="" data-url="">科研基地</a></li>
                         <li><a target="_self" href="" data-url="">科研成果</a></li>
@@ -220,19 +210,19 @@
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/about-party.html" data-url="">党建工作</a>
+            <a target="_self" href="List/about-party.html" data-url="">党建工作</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
                     <ul>
-                            <li><a target="_self" href="/Data/List/about-party.html" data-url="">党总支概况</a></li>
+                            <li><a target="_self" href="List/about-party.html" data-url="">党总支概况</a></li>
                             <li><a target="_self" href="" data-url="">支部风采</a></li>
                             <li><a target="_self" href="" data-url="">党建活动</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="/Data/List/Contact.html" data-url="">联系我们</a>
+            <a target="_self" href="List/Contact.html" data-url="">联系我们</a>
 
         </li>
 </ul>
@@ -256,66 +246,23 @@
                         <div class="b-banner">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper pos">
+                                    <c:forEach items="${news }" var="n" varStatus="v">
                                         <div class="swiper-slide ">
-                                            <a href="/Data/View/594" target="_blank">
+                                            <a href="">
                                                 <div class="ban-text">
-                                                    <h5>Lorem ipsum dolor sit amet.</h5>
-                                                    <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus eius harum hic id quam saepe unde. A commodi eos ipsum nesciunt quae quo repellendus tenetur? Commodi consequatur, eius esse eveniet ex, fugiat ipsam labore maxime modi nisi obcaecati odio omnis rerum sed soluta tempore tenetur voluptas! Dolores, voluptatum.w </p>
-
+                                                <h5>${n.name }</h5>
+                                                    <p>${n.info}</p>
                                                 </div>
-                                                <div class="ban-img ">
-                                                    <div class="ban-img1 pos">
-                                                        <img src="Assets/userfiles/images/news/examples.jpg" cut="7em" />
-                                                        <div class="boredr2" cut="7em"></div>
-                                                    </div>
-                                                    <!--ban-img1 end-->
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </a>
-                                        </div>
-                                    <div class="swiper-slide ">
-                                        <a href="/Data/View/594" target="_blank">
-                                            <div class="ban-text">
-                                                <h5>Lorem ipsum dolor sit amet.</h5>
-                                                <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus eius harum hic id quam saepe unde. A commodi eos ipsum nesciunt quae quo repellendus tenetur? Commodi consequatur, eius esse eveniet ex, fugiat ipsam labore maxime modi nisi obcaecati odio omnis rerum sed soluta tempore tenetur voluptas! Dolores, voluptatum.w </p>
-
-                                            </div>
                                             <div class="ban-img ">
                                                 <div class="ban-img1 pos">
                                                     <img src="Assets/userfiles/images/news/examples.jpg" cut="7em" />
-                                                    <div class="boredr2" cut="7em"></div>
+                                                <div class="boredr2" cut="7em"></div>
                                                 </div>
-                                                <!--ban-img1 end-->
-                                            </div>
+                                            </div></a>
+                                            <!--ban-img1 end-->
                                             <div class="clearfix"></div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide ">
-                                        <a href="/Data/View/594" target="_blank">
-                                            <div class="ban-text">
-                                                <h5>Lorem ipsum dolor sit amet.</h5>
-                                                <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad dolor ducimus eius harum hic id quam saepe unde. A commodi eos ipsum nesciunt quae quo repellendus tenetur? Commodi consequatur, eius esse eveniet ex, fugiat ipsam labore maxime modi nisi obcaecati odio omnis rerum sed soluta tempore tenetur voluptas! Dolores, voluptatum.w </p>
-
-                                            </div>
-                                            <div class="ban-img ">
-                                                <div class="ban-img1 pos">
-                                                    <img src="Assets/userfiles/images/news/examples.jpg" cut="7em" />
-                                                    <div class="boredr2" cut="7em"></div>
-                                                </div>
-                                                <!--ban-img1 end-->
-                                            </div>
-                                            <div class="clearfix"></div>
-                                        </a>
-                                    </div>
-                                        <div class="swiper-slide ">
-
                                         </div>
-                                        <div class="swiper-slide ">
-
-                                        </div>
-                                        <div class="swiper-slide ">
-
-                                        </div>
+                                    </c:forEach>
                                 </div>
                                 <!-- Add Pagination -->
                                 <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"></div>
@@ -337,7 +284,7 @@
                 <div class="new-left col-lg-8 col-md-8 col-sm-12">
                         <div class="new-top new-top2 ">
                             <span>专业新闻</span>
-                            <a href="/Data/List/news">查看更多</a>
+                            <a href="List/news/allnews.html">查看更多</a>
                             <div class="clearfix"></div>
                         </div>
                         <!--new-top end-->
@@ -346,8 +293,8 @@
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper pos">
                                                 <div class="swiper-slide">
-                                                    <a href="/Data/View/599" target="_self">
-                                                        <img src="Assets/userfiles/" cut="61em" />
+                                                    <a href="" target="_self">
+                                                        <img src="Assets/userfiles/images/dj.jpg" cut="61em" />
                                                         <div class="ban-text">
                                                             <span>11111111</span>
                                                             <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor omnis quo veniam. A blanditiis dignissimos hic quis quos sint?</p>
@@ -358,7 +305,7 @@
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <a href="/Data/View/597" target="_self">
-                                                        <img src="Assets/userfiles" cut="61em" />
+                                                        <img src="Assets/userfiles/images/rc-1.jpg" cut="61em" />
                                                         <div class="ban-text">
                                                             <span>2222222</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa, deserunt mollitia non quam quidem quos rem saepe sequi veritatis.</p>
@@ -368,7 +315,7 @@
                                                 </div>
                                                 <div class="swiper-slide">
                                                     <a href="/Data/View/596" target="_self">
-                                                        <img src="Assets/userfiles" cut="61em" />
+                                                        <img src="Assets/userfiles/images/kxyj-1.jpg" cut="61em" />
                                                         <div class="ban-text">
                                                             <span>3333333</span>
                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut eligendi enim id inventore libero nostrum, quae sapiente sequi voluptatibus?</p>
@@ -689,12 +636,6 @@
 
 </div>
 <!--bg2 end-->
-
-
-
-
-
-
         <div class="footer pos">
             <div class="f-con">
                 <!--f-con end-->
@@ -706,41 +647,41 @@
                         <!--f-left end-->
 
                         <div class="f-mid col-lg-7 col-md-7 col-sm-7">
-<div class="clearfix">&nbsp;</div>
+                        <div class="clearfix">&nbsp;</div>
 
 <ul>
 	<li><img src="Assets/images/fic1.png" /> 地址：哈尔滨市香坊区和兴路26号 成栋10楼</li>
 	<li><img src="Assets/images/fic3.png" />&nbsp;电话：###-########</li>
 	<li><img src="Assets/images/fic2.png" /> 传真：###-########</li>
 	<li><img src="Assets/images/fic4.png" /> 邮编：#####</li>
-    <li id="login"><img src="Assets/images/login.png"/> 管理员登录</li>
-
+    <li class="layui-btn-container"><img src="Assets/images/login.png" alt="管理员登录"><button type="button" class="layui-btn " style="  color:white;
+    border: none;background: 0 0" lay-on="test-page-custom">管理员登录
+    </button></li>
 </ul>
+<%--                            <div id="ID-test-layer-wrapper" style="display: none;">--%>
+<%--                                <div style="padding:16px;">--%>
+<%--                                    弹出已经存在于页面中的一段元素<br>--%>
+<%--                                    通常是放置在 body 根节点下--%>
+<%--                                </div>--%>
+<%--                            </div>--%>
+
                         </div>
                         <!--f-mid end-->
                     </div>
                     <div class="wc-copy">
                         <p>版权所有@东北林业大学软件工程专业  </p>
                     </div>
-                    <div class="login"></div>
                 </div>
             </div>
         </div>
         <!--footer end-->
-
-
     </div>
     <!-- box End-->
 
 
-<!--    <div id="msg" style="display:none;">-->
-<!--        <img src="Assets/img/loading.gif" style="vertical-align: bottom" />&nbsp;&nbsp;loading......-->
-<!--    </div>-->
-
     <script src="Assets/js/jquery.min.js"></script>
-    <script src="Assets/js/layer/layer.js"></script>
     <script src="Assets/js/scrollToTop.js" type="text/javascript"></script>
-
+    <script src="//unpkg.com/layui@2.9.13/dist/layui.js"></script>
     <script src="Assets/js/jquery.validate.min.js"></script><!--    表单验证-->
 
     <script src="Assets/js/bootstrap.min.js"></script>
@@ -752,25 +693,12 @@
     <script src="Assets/js/scripts.js"></script>
     <script src="Assets/js/swiper-3.4.5.min.js"></script><!--    主要用于移动设备图片轮播库-->
 
-    <script src="Assets/js/jquery.blockUI.js"></script><!--    在页面上创建一个遮罩层（mask），它可以阻止用户与页面的交互-->
-
-
     <script>
-            //登录
-            $(".logincss").click(function () {
-                var href = $(this).data("url");
-                layer.open({
-                    type: 2,
-                    title: '用户登录',
-                    shade: false,
-                    area: ['320px', '215px'], //宽高
-                    content: ['/Passport/LoginLayer?href=' + href, 'no'], //iframe的url，no代表不显示滚动条
-                });
-            });
-        //置顶
-        scrolltotop.init();
+        $(function () {
+            //置顶
+            scrolltotop.init()
+        })
     </script>
-
     <script>
         function BlockPage() {
             $.blockUI({
@@ -778,34 +706,7 @@
                 css: { border: '1px solid #ccc', padding: '5px', left: (($(window).width() - 135) / 2 + 'px'), top: (($(window).height() - 44) / 2 + 'px'), width: '135px' }
             });
         }
-
         function UnBlockPage() { setTimeout(function () { $.unblockUI(); }, 600); }
-
-        //方法二 （前台提交常用）
-        function CallBack(rdata) {
-            UnBlockPage();
-            if (!rdata.err) {
-                layer.alert(rdata.msg, { title: "友情提示", closeBtn: 0 }, function (index) {
-                    layer.close(index);
-                    if (rdata.url != "" && rdata.url != undefined) {
-                        if (top !== window) {
-                            top.location.href = rdata.url;
-                        } else {
-                            window.location.href = rdata.url;
-                        }
-                    } else {
-                        window.location.reload();
-                    }
-                });
-            } else {
-                layer.msg(rdata.msg, function () { });
-                return false;
-            }
-
-            //重置验证码
-            $(".code").val("");
-            $('#imgCode').trigger('click');
-        }
     </script>
     <script>//轮播图   https://swiperjs.com/get-started
         let swiper1 = new Swiper('.b-banner .swiper-container', {
@@ -926,6 +827,91 @@
                     $(".fbg").addClass("animated  fadeInDown");
                 }
             });
+        });
+    </script>
+
+    <script src="//unpkg.com/layui@2.9.13/dist/layui.js"></script>
+    <script>
+        layui.use(function(){
+            var $ = layui.$;
+            var layer = layui.layer;
+            var util = layui.util;
+            var form = layui.form;
+            // 事件
+            util.on('lay-on', {
+
+                'test-page-custom': function(){
+                    layer.open({
+                        type: 1,
+                        area: '350px',
+                        resize: false,
+                        shadeClose: true,
+                        title: '管理员登录',
+                        content: `
+          <div class="layui-form" lay-filter="filter-test-layer" style="margin: 16px;">
+            <div class="demo-login-container">
+              <div class="layui-form-item">
+                <div class="layui-input-wrap">
+                  <div class="layui-input-prefix">
+                    <i class="layui-icon layui-icon-username"></i>
+                  </div>
+                  <input type="text" name="username" value="" lay-verify="required" placeholder="用户名" lay-reqtext="请填写用户名" autocomplete="off" class="layui-input" lay-affix="clear">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-input-wrap">
+                  <div class="layui-input-prefix">
+                    <i class="layui-icon layui-icon-password"></i>
+                  </div>
+                  <input type="password" name="password" value="" lay-verify="required" placeholder="密   码" lay-reqtext="请填写密码" autocomplete="off" class="layui-input" lay-affix="eye">
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <div class="layui-row">
+                  <div class="layui-col-xs7">
+                    <div class="layui-input-wrap">
+                      <div class="layui-input-prefix">
+                        <i class="layui-icon layui-icon-vercode"></i>
+                      </div>
+                      <input type="text" name="captcha" value="" lay-verify="required" placeholder="验证码" lay-reqtext="请填写验证码" autocomplete="off" class="layui-input" lay-affix="clear">
+                    </div>
+                  </div>
+                  <div class="layui-col-xs5">
+                    <div style="margin-left: 10px;">
+                      <img src="https://www.oschina.net/action/user/captcha" onclick="this.src='https://www.oschina.net/action/user/captcha?t='+ new Date().getTime();">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="layui-form-item">
+                <input type="checkbox" name="remember" lay-skin="primary" title="记住密码">
+                <a href="#forget" style="float: right; margin-top: 7px;">忘记密码？</a>
+              </div>
+              <div class="layui-form-item">
+                <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-login">登录</button>
+              </div>
+
+            </div>
+          </div>
+        `,
+                        success: function(){
+                            // 对弹层中的表单进行初始化渲染
+                            form.render();
+                            // 表单提交事件
+                            form.on('submit(demo-login)', function(data){
+                                var field = data.field; // 获取表单字段值
+                                // 显示填写结果，仅作演示用
+                                layer.alert(JSON.stringify(field), {
+                                    title: '当前填写的字段值'
+                                });
+                                // 此处可执行 Ajax 等操作
+                                // …
+                                return false; // 阻止默认 form 跳转
+                            });
+                        }
+                    });
+                }
+            })
         });
     </script>
 
