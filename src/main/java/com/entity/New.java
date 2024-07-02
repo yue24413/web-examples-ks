@@ -6,6 +6,7 @@ public class New {
     private int id;
     private String name;/*新闻标题*/
     private String info;/*新闻信息*/
+    private int type;
     private LocalDateTime insertTime;
     private LocalDateTime updatedTime;
 
@@ -31,6 +32,14 @@ public class New {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getType() {
+        return type;
+    }
+
+    public void setType(int type) {
+        this.type = type;
     }
 
     public LocalDateTime getInsertTime() {

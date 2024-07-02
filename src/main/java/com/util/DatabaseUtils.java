@@ -1,6 +1,7 @@
 package com.util;
 
 import com.entity.Course;
+import com.entity.New;
 import com.entity.Teacher;
 import com.entity.Title;
 

@@ -13,8 +13,12 @@ import java.io.IOException;
 public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        var news = NewService.listNew();
-        req.setAttribute("news", news);
+        var allNews = NewService.listNew();
+        var type1News = NewService.Type1New();
+        var type2News = NewService.Type2New();
+        req.setAttribute("allNews", allNews);
+        req.setAttribute("type1News", type1News);
+        req.setAttribute("type2News", type2News);
         req.getRequestDispatcher("/WEB-INF/index.jsp").forward(req, resp);
     }
 }

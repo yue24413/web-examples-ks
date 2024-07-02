@@ -1,6 +1,8 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<jsp:useBean id="news" scope="request" type="java.util.List<com.entity.New>"/>
+<jsp:useBean id="allNews" scope="request" type="java.util.List<com.entity.New>"/>
+<jsp:useBean id="type1News" scope="request" type="java.util.List<com.entity.New>"/>
+<jsp:useBean id="type2News" scope="request" type="java.util.List<com.entity.New>"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,6 @@
 
     <link href="Assets/css/web/vendors.css" rel="stylesheet" />
     <link href="Assets/css/web/offcanvas.css" rel="stylesheet">
-<!--    <link href="Assets/css/web/iconfont.css" rel="stylesheet" />-->
 
     <link href="//unpkg.com/layui@2.9.13/dist/css/layui.css" rel="stylesheet">
     <link href="Assets/css/web/common.css" rel="stylesheet" />
@@ -119,7 +120,7 @@
                 <li class="menu-item"><a target="_self" href="">党建活动</a></li>
             </ul>
         </li>
-        <li class="menu-item  "><a href="/Data/List/Contact.html" target="_self">联系我们</a></li>
+        <li class="menu-item  "><a href="" target="_self">联系我们</a></li>
     </ul>
 
 
@@ -210,19 +211,19 @@
                 </div>
         </li>
         <li>
-            <a target="_self" href="List/about-party.html" data-url="">党建工作</a>
+            <a target="_self" href="" data-url="">党建工作</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
                     <ul>
-                            <li><a target="_self" href="List/about-party.html" data-url="">党总支概况</a></li>
+                            <li><a target="_self" href="" data-url="">党总支概况</a></li>
                             <li><a target="_self" href="" data-url="">支部风采</a></li>
                             <li><a target="_self" href="" data-url="">党建活动</a></li>
                     </ul>
                 </div>
         </li>
         <li>
-            <a target="_self" href="List/Contact.html" data-url="">联系我们</a>
+            <a target="_self" href="" data-url="">联系我们</a>
 
         </li>
 </ul>
@@ -246,7 +247,7 @@
                         <div class="b-banner">
                             <div class="swiper-container">
                                 <div class="swiper-wrapper pos">
-                                    <c:forEach items="${news }" var="n" varStatus="v">
+                                    <c:forEach items="${allNews }" var="n" varStatus="v" begin="0" end="4">
                                         <div class="swiper-slide ">
                                             <a href="">
                                                 <div class="ban-text">
@@ -284,7 +285,7 @@
                 <div class="new-left col-lg-8 col-md-8 col-sm-12">
                         <div class="new-top new-top2 ">
                             <span>专业新闻</span>
-                            <a href="List/news/allnews.html">查看更多</a>
+                            <a href="List/news/allnews.sjp">查看更多</a>
                             <div class="clearfix"></div>
                         </div>
                         <!--new-top end-->
@@ -292,37 +293,18 @@
                                 <div class="news-ban ">
                                     <div class="swiper-container">
                                         <div class="swiper-wrapper pos">
-                                                <div class="swiper-slide">
-                                                    <a href="" target="_self">
-                                                        <img src="Assets/userfiles/images/dj.jpg" cut="61em" />
-                                                        <div class="ban-text">
-                                                            <span>11111111</span>
-                                                            <p>&nbsp; &nbsp; &nbsp; &nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolor omnis quo veniam. A blanditiis dignissimos hic quis quos sint?</p>
-
-                                                        </div>
-                                                        <i>查看详情</i>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a href="/Data/View/597" target="_self">
-                                                        <img src="Assets/userfiles/images/rc-1.jpg" cut="61em" />
-                                                        <div class="ban-text">
-                                                            <span>2222222</span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque culpa, deserunt mollitia non quam quidem quos rem saepe sequi veritatis.</p>
-                                                        </div>
-                                                        <i>查看详情</i>
-                                                    </a>
-                                                </div>
-                                                <div class="swiper-slide">
-                                                    <a href="/Data/View/596" target="_self">
-                                                        <img src="Assets/userfiles/images/kxyj-1.jpg" cut="61em" />
-                                                        <div class="ban-text">
-                                                            <span>3333333</span>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aut eligendi enim id inventore libero nostrum, quae sapiente sequi voluptatibus?</p>
-                                                        </div>
-                                                        <i>查看详情</i>
-                                                    </a>
-                                                </div>
+                                            <c:forEach items="${type1News }" var="n" begin="0" end="3">
+                                                    <div class="swiper-slide ">
+                                                        <a href="">
+                                                            <img src="Assets/userfiles/images/rc-1.jpg" cut="61em" />
+                                                            <div class="ban-text">
+                                                                <span>${n.name }</span>
+                                                                <p>${n.info}</p>
+                                                            </div>
+                                                            <i>查看详情</i>
+                                                        </a>
+                                                    </div>
+                                            </c:forEach>
                                         </div>
                                         <!-- Add Pagination -->
                                         <div class="swiper-pagination hidden-lg hidden-md"></div>
@@ -335,75 +317,42 @@
                 <div class="new-right col-lg-4 col-md-4 col-sm-12">
                         <div class="new-top ">
                             <span>通知公告</span>
-                            <a href="/Data/List/events">查看更多</a>
+                            <a href="List/news/type1News.jsp">查看更多</a>
                             <div class="clearfix"></div>
                         </div>
                         <!--new-top end-->
                         <div class="tong-ul">
                                 <ul>
+                                    <li><a href="" target="_self">
+                                        <div class="li-date fl">
+                                            <span>03月</span>
+                                            <p>2024年 </p>
+<%--                                        <i>置顶</i>--%>
+                                        </div>
+                                        <div class="li-tt fr">
+                                            <p>招聘启事</p>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        </a>
+                                    </li>
+                                    <c:forEach items="${type2News }" var="n" begin="0" end="2">
                                         <li>
-                                            <a href="/Data/View/561" target="_self">
-                                                <div class="li-date fl">
-                                                    <span>14</span>
-                                                    <p>09月 </p>
-                                                        <i>置顶</i>
-                                                </div>
-                                                <div class="li-tt fr">
-                                                    <p>
-                                                        招聘启事
-                                                    </p>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/Data/View/598" target="_self">
-                                                <div class="li-date fl">
-                                                    <span>22</span>
-                                                    <p>06月 </p>
-                                                </div>
-                                                <div class="li-tt fr">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, saepe.
-                                                    </p>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/Data/View/577" target="_self">
-                                                <div class="li-date fl">
-                                                    <span>12</span>
-                                                    <p>11月 </p>
-                                                </div>
-                                                <div class="li-tt fr">
-                                                    <p>
-                                                        Lorem ipsum dolor sit amet.
-                                                    </p>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="/Data/View/576" target="_self">
-                                                <div class="li-date fl">
-                                                    <span>12</span>
-                                                    <p>11月 </p>
-                                                </div>
-                                                <div class="li-tt fr">
-                                                    <p>
-                                                        2024年海外优青人才招聘启事
-                                                    </p>
-                                                </div>
-                                                <div class="clearfix"></div>
-                                            </a>
-                                        </li>
+                                            <a href="" target="_self">
+                                            <div class="li-date fl">
+                                                <span>06月</span>
+                                                <p>2024年</p>
+                                            </div>
+                                            <div class="li-tt fr">
+                                                <p>${n.name}</p>
+                                            </div>
+                                            <div class="clearfix"></div>
+                                        </a></li>
+                                    </c:forEach>
                                 </ul>
                         </div>
                         <!--tong-ul end-->
                 </div>
                 <!--new-right end-->
-
                 <div class="clearfix"></div>
             </div>
         </div>

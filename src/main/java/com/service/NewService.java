@@ -9,6 +9,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,8 +26,51 @@ public class NewService {
                 newI.setId(rs.getInt("id"));
                 newI.setName(rs.getString("name"));
                 newI.setInfo(rs.getString("info"));
+                newI.setType(rs.getInt("type"));
                 newI.setInsertTime(rs.getObject("insert_time", LocalDateTime.class));
                 newI.setInsertTime(rs.getObject("update_time", LocalDateTime.class));
+                news.add(newI);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return news;
+    }
+    public static List<New> Type1New() {
+        List<New> news = new ArrayList<>();
+        String sql = "select * from new where type=1";
+        try (Connection conn = DataSourceUtils.getConnection();//从数据源中获取一个连接
+             PreparedStatement ps = conn.prepareStatement(sql);//预编译的SQL语句对象，PreparedStatement填充占位符
+             ResultSet rs = ps.executeQuery()) {//执行了PreparedStatement对象中的查询语句
+            while (rs.next()) {//游标
+                New newI = new New();
+                newI.setId(rs.getInt("id"));
+                newI.setName(rs.getString("name"));
+                newI.setInfo(rs.getString("info"));
+                newI.setType(rs.getInt("type"));
+                newI.setInsertTime(rs.getObject("insert_time", LocalDateTime.class));
+                newI.setUpdatedTime(rs.getObject("update_time", LocalDateTime.class));
+                news.add(newI);
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return news;
+    }
+    public static List<New> Type2New() {
+        List<New> news = new ArrayList<>();
+        String sql = "select * from new where type=2";
+        try (Connection conn = DataSourceUtils.getConnection();//从数据源中获取一个连接
+             PreparedStatement ps = conn.prepareStatement(sql);//预编译的SQL语句对象，PreparedStatement填充占位符
+             ResultSet rs = ps.executeQuery()) {//执行了PreparedStatement对象中的查询语句
+            while (rs.next()) {//游标
+                New newI = new New();
+                newI.setId(rs.getInt("id"));
+                newI.setName(rs.getString("name"));
+                newI.setInfo(rs.getString("info"));
+                newI.setType(rs.getInt("type"));
+                newI.setInsertTime(rs.getObject("insert_time", LocalDateTime.class));
+                newI.setUpdatedTime(rs.getObject("update_time", LocalDateTime.class));
                 news.add(newI);
             }
         } catch (SQLException e) {
