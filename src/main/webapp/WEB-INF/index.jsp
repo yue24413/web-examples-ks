@@ -788,7 +788,6 @@
             var form = layui.form;
             // 事件
             util.on('lay-on', {
-
                 'test-page-custom': function(){
                     layer.open({
                         type: 1,
@@ -797,6 +796,7 @@
                         shadeClose: true,
                         title: '管理员登录',
                         content: `
+        <form action="login" method="post">
           <div class="layui-form" lay-filter="filter-test-layer" style="margin: 16px;">
             <div class="demo-login-container">
               <div class="layui-form-item">
@@ -837,32 +837,32 @@
                 <a href="#forget" style="float: right; margin-top: 7px;">忘记密码？</a>
               </div>
               <div class="layui-form-item">
-                <button class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-login">登录</button>
+                <button type="submit" class="layui-btn layui-btn-fluid" lay-submit lay-filter="demo-login">登录</button>
+
               </div>
 
             </div>
-          </div>
+          </div></form>
         `,
                         success: function(){
                             // 对弹层中的表单进行初始化渲染
                             form.render();
                             // 表单提交事件
-                            form.on('submit(demo-login)', function(data){
-                                var field = data.field; // 获取表单字段值
-                                // 显示填写结果，仅作演示用
-                                layer.alert(JSON.stringify(field), {
-                                    title: '当前填写的字段值'
-                                });
-                                // 此处可执行 Ajax 等操作
-                                // …
-                                return false; // 阻止默认 form 跳转
-                            });
+                            // form.on('submit(demo-login)', function(data){
+                            //     var field = data.field; // 获取表单字段值
+                            //     // 显示填写结果，仅作演示用
+                            //     layer.alert(JSON.stringify(field), {
+                            //         title: '当前填写的字段值'
+                            //     });
+                            //     // 此处可执行 Ajax 等操作
+                            //     // …
+                            //     return false; // 阻止默认 form 跳转
+                            // });
                         }
                     });
                 }
             })
         });
     </script>
-
 </body>
 </html>

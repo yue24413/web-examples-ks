@@ -8,6 +8,10 @@ public class User {
     private LocalDateTime insertTime;
     private LocalDateTime updateTime;
 
+    public User(String name){
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
