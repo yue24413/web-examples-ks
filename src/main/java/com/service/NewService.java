@@ -1,7 +1,6 @@
 package com.service;
 
 import com.entity.New;
-import com.entity.User;
 import com.util.DataSourceUtils;
 
 import java.sql.Connection;

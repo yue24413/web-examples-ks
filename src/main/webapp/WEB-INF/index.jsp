@@ -38,7 +38,7 @@
                     <button type="button" class="form-submit"><img src="Assets/images/searchup.png" class="searchup"></button>
                 </div>
                 <div class="close">
-                    关闭✕ </i>
+                    关闭✕
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
             <div class="navbar-header ">
                 <div class="container">
                     <div class="row">
-                        <a href="/" class=" logo1">
+                        <a href="" class=" logo1">
                             <img src="Assets/images/logodouble.png" id="img" class="img-responsive">
                         </a>
                         <a href="#mnmd-offcanvas" class="offcanvas-menu-toggle is-active offcanvas-header-btn js-mnmd-offcanvas-toggle">
@@ -73,24 +73,24 @@
             <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
             <div id="offcanvas-menu" class="menu-main-menu-container">
     <ul class="navigation navigation--offcanvas">
-        <li class="menu-item"><a href="List/welcome.html" target="_self">首页</a></li>
-        <li class="menu-item menu-item-has-children "><a href="List/welcome.html" target="_self">专业概况</a>
+        <li class="menu-item"><a href="List/HomePage.html" target="_self">首页</a></li>
+        <li class="menu-item menu-item-has-children "><a href="List/HomePage.html" target="_self">专业概况</a>
             <ul class="sub-menu" style="display: block;">
-                <li class="menu-item"><a target="_self" href="List/welcome.html">欢迎辞</a></li>
-                <li class="menu-item"><a target="_self" href="List/welcome.html">专业简介</a></li>
+                <li class="menu-item"><a target="_self" href="List/HomePage.html">欢迎辞</a></li>
+                <li class="menu-item"><a target="_self" href="List/HomePage.html">专业简介</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="List/teachers.html" target="_self">师资队伍</a>
+        <li class="menu-item menu-item-has-children "><a href="allTeachers" target="_self">师资队伍</a>
             <ul class="sub-menu" style="display: block;">
                 <li class="menu-item"><a target="_self" href="">杰出人才</a></li>
                 <li class="menu-item"><a target="_self" href="">青年人才</a></li>
-                <li class="menu-item"><a target="_self" href="">教师名录</a></li>
+                <li class="menu-item"><a target="_self" href="allTeachers">教师名录</a></li>
                 <li class="menu-item"><a target="_self" href="">博士后</a></li>
                 <li class="menu-item"><a target="_self" href="">荣退教师</a></li>
                 <li class="menu-item"><a target="_self" href="">人才招聘</a></li>
             </ul>
         </li>
-        <li class="menu-item menu-item-has-children "><a href="List/about-research.html" target="_self">科学研究</a>
+        <li class="menu-item menu-item-has-children "><a href="" target="_self">科学研究</a>
             <ul class="sub-menu" style="display: block;">
                 <li class="menu-item"><a target="_self" href="">科研概况</a></li>
                 <li class="menu-item"><a target="_self" href="">研究方向</a></li>
@@ -134,7 +134,7 @@
         <div class="container container2">
             <div class="row">
                 <div class="logo col-lg-5 col-md-5  animated  fadeInLeft">
-                    <a href="/"><img src="Assets/images/logodouble.png" /></a>
+                    <a href=""><img src="Assets/images/logodouble.png" /></a>
                 </div>
                 <div class="top-tright text-right  col-lg-7 col-md-7 pos animated fadeInRight">
                     <div class="top-trtop">
@@ -144,13 +144,13 @@
                     <div class="wc-menu ">
 
     <ul>
-        <li><a href="List/welcome.html">首页</a></li>
-        <li><a data-id="" target="_self" href="List/welcome.html" data-url="">专业概况</a>
+        <li><a href="List/HomePage.html">首页</a></li>
+        <li><a data-id="" target="_self" href="List/HomePage.html" data-url="">专业概况</a>
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="List/welcome.html" data-url="">欢迎辞</a></li>
-                        <li><a target="_self" href="List/welcome.html" data-url="">专业简介</a></li>
+                        <li><a target="_self" href="List/HomePage.html" data-url="">欢迎辞</a></li>
+                        <li><a target="_self" href="List/HomePage.html" data-url="">专业简介</a></li>
                         <li><a target="_self" href="" data-url="">专业领导</a></li>
                         <li><a target="_self" href="" data-url="">机构设置</a></li>
                         <li><a target="_self" href="" data-url="">历任领导</a></li>
@@ -158,14 +158,14 @@
                 </div>
         </li>
         <li>
-            <a target="_self" href="List/teachers.html" data-url="">师资队伍</a>
+            <a target="_self" href="allTeachers" data-url="">师资队伍</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
                     <ul>
                         <li><a target="_self" href="" data-url="">杰出人才</a></li>
                         <li><a target="_self" href="" data-url="">青年人才</a></li>
-                        <li><a target="_self" href="" data-url="">教师名录</a></li>
+                        <li><a target="_self" href="" data-url="allTeachers">教师名录</a></li>
                         <li><a target="_self" href="" data-url="">博士后</a></li>
                         <li><a target="_self" href="" data-url="">荣退教师</a></li>
                         <li><a target="_self" href="" data-url="">人才招聘</a></li>
@@ -173,12 +173,12 @@
                 </div>
         </li>
         <li>
-            <a target="_self" href="List/about-research.html" data-url="">科学研究</a>
+            <a target="_self" href="" data-url="">科学研究</a>
 
                 <div class="ernav" cut="13em">
                     <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
                     <ul>
-                        <li><a target="_self" href="List/about-research.html" data-url="">科研概况</a></li>
+                        <li><a target="_self" href="" data-url="">科研概况</a></li>
                         <li><a target="_self" href="" data-url="">研究方向</a></li>
                         <li><a target="_self" href="" data-url="">科研基地</a></li>
                         <li><a target="_self" href="" data-url="">科研成果</a></li>
@@ -631,8 +631,6 @@
     <script src="Assets/js/jquery.min.js"></script>
     <script src="Assets/js/scrollToTop.js" type="text/javascript"></script>
     <script src="//unpkg.com/layui@2.9.13/dist/layui.js"></script>
-    <script src="Assets/js/jquery.validate.min.js"></script><!--    表单验证-->
-
     <script src="Assets/js/bootstrap.min.js"></script>
     <script src="Assets/js/bootstrap-dropdown-on-hover.js"></script>
     <script src="Assets/js/index.js"></script>
@@ -804,7 +802,7 @@
                   <div class="layui-input-prefix">
                     <i class="layui-icon layui-icon-username"></i>
                   </div>
-                  <input type="text" name="username" value="" lay-verify="required" placeholder="用户名" lay-reqtext="请填写用户名" autocomplete="off" class="layui-input" lay-affix="clear">
+                  <input type="text" name="username" value="" lay-verify="required" placeholder="用户名(测试用例：BO)" lay-reqtext="请填写用户名" autocomplete="off" class="layui-input" lay-affix="clear">
                 </div>
               </div>
               <div class="layui-form-item">
@@ -812,7 +810,7 @@
                   <div class="layui-input-prefix">
                     <i class="layui-icon layui-icon-password"></i>
                   </div>
-                  <input type="password" name="password" value="" lay-verify="required" placeholder="密   码" lay-reqtext="请填写密码" autocomplete="off" class="layui-input" lay-affix="eye">
+                  <input type="password" name="password" value="" lay-verify="required" placeholder="密   码(测试用例：123456)" lay-reqtext="请填写密码" autocomplete="off" class="layui-input" lay-affix="eye">
                 </div>
               </div>
               <div class="layui-form-item">

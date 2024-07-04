@@ -5,17 +5,19 @@ import java.time.LocalDateTime;
 public class Teacher {
     private int id;
     private String name;
-    private Title title;
+    private String title;
     private String info;
-    private LocalDateTime createdAt;
+    private LocalDateTime insertTime;
+    private LocalDateTime updateTime;
 
     public Teacher() {}
-    public Teacher(int id, String name, Title title, String info, LocalDateTime createdAt) {
+    public Teacher(int id, String name, String title, String info, LocalDateTime insertTime,LocalDateTime updateTime) {
         this.id = id;
         this.name = name;
         this.title = title;
         this.info = info;
-        this.createdAt = createdAt;
+        this.insertTime = insertTime;
+        this.updateTime = updateTime;
     }
 
     public int getId() {
@@ -34,11 +36,11 @@ public class Teacher {
         this.name = name;
     }
 
-    public Title getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public void setTitle(Title title) {
+    public void setTitle(String title) {
         this.title = title;
     }
 
@@ -50,11 +52,19 @@ public class Teacher {
         this.info = info;
     }
 
-    public LocalDateTime getCreatedAt() {
-        return createdAt;
+    public LocalDateTime getInsertTime() {
+        return insertTime;
     }
 
-    public void setCreatedAt(LocalDateTime createdAt) {
-        this.createdAt = createdAt;
+    public void setInsertTime(LocalDateTime insertTime) {
+        this.insertTime = insertTime;
+    }
+
+    public LocalDateTime getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(LocalDateTime updateTime) {
+        this.updateTime = updateTime;
     }
 }

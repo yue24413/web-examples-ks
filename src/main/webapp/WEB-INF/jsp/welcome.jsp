@@ -1,6 +1,6 @@
 <%@ page pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="jakarta.tags.core" %>
-<%--<jsp:useBean id="user" scope="request" type="java.util.List<com.entity.User>"/>--%>
+<jsp:useBean id="user" scope="request" type="java.util.List<com.entity.User>"/>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +8,7 @@
     <title>Welcome!</title>
 </head>
 <body>
-<%--<h1>欢迎您！${user.name}</h1>--%>
-<%--<p>  ${user.updateTime} 登陆成功！</p>--%>
+<h1>欢迎您！${user.name}</h1>
+<p>  ${user.updateTime} 登陆成功！</p>
 </body>
 </html>
