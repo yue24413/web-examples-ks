@@ -62,7 +62,7 @@
         <div id="mnmd-offcanvas" class="mnmd-offcanvas js-mnmd-offcanvas js-perfect-scrollbar">
             <div class="mnmd-offcanvas__title">
                 <h2 class="site-logo">
-                    <a href="/">
+                    <a href="#">
                         <img src="Assets/images/logodouble.png" alt="">
                     </a>
                 </h2>
@@ -73,7 +73,7 @@
             <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
             <div id="offcanvas-menu" class="menu-main-menu-container">
     <ul class="navigation navigation--offcanvas">
-        <li class="menu-item"><a href="List/HomePage.html" target="_self">首页</a></li>
+        <li class="menu-item"><a href="index.html" target="_self">首页</a></li>
         <li class="menu-item menu-item-has-children "><a href="List/HomePage.html" target="_self">专业概况</a>
             <ul class="sub-menu" style="display: block;">
                 <li class="menu-item"><a target="_self" href="List/HomePage.html">欢迎辞</a></li>
@@ -145,9 +145,8 @@
 
     <ul>
         <li><a href="List/HomePage.html">首页</a></li>
-        <li><a data-id="" target="_self" href="List/HomePage.html" data-url="">专业概况</a>
+        <li><a data-id="" target="_self" href="index.html" data-url="">专业概况</a>
                 <div class="ernav" cut="13em">
-                    <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
                     <ul>
                         <li><a target="_self" href="List/HomePage.html" data-url="">欢迎辞</a></li>
                         <li><a target="_self" href="List/HomePage.html" data-url="">专业简介</a></li>
@@ -161,7 +160,6 @@
             <a target="_self" href="allTeachers" data-url="">师资队伍</a>
 
                 <div class="ernav" cut="13em">
-                    <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
                     <ul>
                         <li><a target="_self" href="" data-url="">杰出人才</a></li>
                         <li><a target="_self" href="" data-url="">青年人才</a></li>
@@ -176,7 +174,6 @@
             <a target="_self" href="" data-url="">科学研究</a>
 
                 <div class="ernav" cut="13em">
-                    <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
                     <ul>
                         <li><a target="_self" href="" data-url="">科研概况</a></li>
                         <li><a target="_self" href="" data-url="">研究方向</a></li>
@@ -189,7 +186,6 @@
             <a target="_self" href="" data-url="">人才培养</a>
 
                 <div class="ernav" cut="13em">
-                    <img src="Assets/userfiles/images/rc-1.jpg" cut="13em" />
                     <ul>
                             <li><a target="_self" href="" data-url="">本科生培养</a></li>
                             <li><a target="_self" href="" data-url="">研究生培养</a></li>
@@ -202,7 +198,6 @@
             <a target="_self" href="" data-url="">校友会</a>
 
                 <div class="ernav" cut="13em">
-                    <img src="Assets/userfiles/images/xy-1.png" cut="13em" />
                     <ul>
                             <li><a target="_self" href="" data-url="">校友资讯</a></li>
                             <li><a target="_self" href="" data-url="">校友服务</a></li>
@@ -214,7 +209,6 @@
             <a target="_self" href="" data-url="">党建工作</a>
 
                 <div class="ernav" cut="13em">
-                    <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
                     <ul>
                             <li><a target="_self" href="" data-url="">党总支概况</a></li>
                             <li><a target="_self" href="" data-url="">支部风采</a></li>
@@ -325,8 +319,8 @@
                                 <ul>
                                     <li><a href="" target="_self">
                                         <div class="li-date fl">
-                                            <span>03月</span>
-                                            <p>2024年 </p>
+                                            <span>03日</span>
+                                            <p>03月 </p>
 <%--                                        <i>置顶</i>--%>
                                         </div>
                                         <div class="li-tt fr">
@@ -339,8 +333,8 @@
                                         <li>
                                             <a href="" target="_self">
                                             <div class="li-date fl">
-                                                <span>06月</span>
-                                                <p>2024年</p>
+                                                <span>${n.updatedTime.toString().substring(8,10)}日</span>
+                                                <p>${n.updatedTime.toString().substring(5,7)}月</p>
                                             </div>
                                             <div class="li-tt fr">
                                                 <p>${n.name}</p>
