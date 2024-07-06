@@ -147,7 +147,7 @@
                                 <li><a href="List/HomePage.html">首页</a></li>
                                 <li><a data-id="" target="_self" href="List/HomePage.html" data-url="">专业概况</a>
                                     <div class="ernav" cut="13em">
-                                        <img src="Assets/userfiles/images/xy-1.jpg" cut="13em" />
+                                        <img src="" cut="13em" />
                                         <ul>
                                             <li><a target="_self" href="List/HomePage.html" data-url="">欢迎辞</a></li>
                                             <li><a target="_self" href="List/HomePage.html" data-url="">专业简介</a></li>
@@ -161,7 +161,7 @@
                                     <a target="_self" href="allTeachers" data-url="">师资队伍</a>
 
                                     <div class="ernav" cut="13em">
-                                        <img src="Assets/userfiles/images/szdw-1.jpg" cut="13em" />
+                                        <img src="" cut="13em" />
                                         <ul>
                                             <li><a target="_self" href="" data-url="">杰出人才</a></li>
                                             <li><a target="_self" href="" data-url="">青年人才</a></li>
@@ -176,7 +176,7 @@
                                     <a target="_self" href="" data-url="">科学研究</a>
 
                                     <div class="ernav" cut="13em">
-                                        <img src="Assets/userfiles/images/kxyj-1.jpg" cut="13em" />
+                                        <img src="" cut="13em" />
                                         <ul>
                                             <li><a target="_self" href="" data-url="">科研概况</a></li>
                                             <li><a target="_self" href="" data-url="">研究方向</a></li>
@@ -189,7 +189,7 @@
                                     <a target="_self" href="" data-url="">人才培养</a>
 
                                     <div class="ernav" cut="13em">
-                                        <img src="Assets/userfiles/images/rc-1.jpg" cut="13em" />
+                                        <img src="" cut="13em" />
                                         <ul>
                                             <li><a target="_self" href="" data-url="">本科生培养</a></li>
                                             <li><a target="_self" href="" data-url="">研究生培养</a></li>
@@ -202,7 +202,7 @@
                                     <a target="_self" href="" data-url="">校友会</a>
 
                                     <div class="ernav" cut="13em">
-                                        <img src="Assets/userfiles/images/xy-1.png" cut="13em" />
+                                        <img src="" cut="13em" />
                                         <ul>
                                             <li><a target="_self" href="" data-url="">校友资讯</a></li>
                                             <li><a target="_self" href="" data-url="">校友服务</a></li>
@@ -214,7 +214,7 @@
                                     <a target="_self" href="" data-url="">党建工作</a>
 
                                     <div class="ernav" cut="13em">
-                                        <img src="Assets/userfiles/images/dj.jpg" cut="13em" />
+                                        <img src="" cut="13em" />
                                         <ul>
                                             <li><a target="_self" href="" data-url="">党总支概况</a></li>
                                             <li><a target="_self" href="" data-url="">支部风采</a></li>

@@ -14,7 +14,7 @@ import java.util.List;
 
 @WebFilter("/welcome")
 public class LoginFilter extends HttpFilter {
-//    private List<String> excludes = List.of("/login","/index.html");
+//    private List<String> excludes = List.of("/login");
 
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {

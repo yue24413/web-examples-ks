@@ -145,7 +145,7 @@
 
     <ul>
         <li><a href="List/HomePage.html">首页</a></li>
-        <li><a data-id="" target="_self" href="index.html" data-url="">专业概况</a>
+        <li><a data-id="" target="_self" href="List/HomePage.html" data-url="">专业概况</a>
                 <div class="ernav" cut="13em">
                     <ul>
                         <li><a target="_self" href="List/HomePage.html" data-url="">欢迎辞</a></li>
@@ -290,7 +290,7 @@
                                             <c:forEach items="${type1News }" var="n" begin="0" end="3">
                                                     <div class="swiper-slide ">
                                                         <a href="">
-                                                            <img src="Assets/userfiles/images/rc-1.jpg" cut="61em" />
+                                                            <img src="Assets/userfiles/images/kxyj-1.jpg" cut="61em" />
                                                             <div class="ban-text">
                                                                 <span>${n.name }</span>
                                                                 <p>${n.info}</p>
@@ -382,7 +382,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images" cut="6em" />
+                                                                <img src="" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -403,7 +403,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images" cut="6em" />
+                                                                <img src="" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -423,7 +423,7 @@
                                                         </div>
                                                         <div class="ban-img ">
                                                             <div class="ban-img1 pos text-right">
-                                                                <img src="Assets/userfiles/images" cut="6em" />
+                                                                <img src="" cut="6em" />
                                                                 <div class="boredr3" cut="6em">
 
                                                                 </div>
@@ -469,7 +469,7 @@
                         <div class="science-one col-lg-3 col-md-6 col-sm-6">
                             <div class="science-oneone">
                                 <div class="science-top" cut="0.5em">
-                                    <a href="/Data/List/yjfx" target="_self">
+                                    <a href="" target="_self">
                                         <span>系统软件</span>
                                         <img src="Assets/images/kic1.png" />
                                     </a>
@@ -477,11 +477,11 @@
                                 <!--science-top end-->
                                 <div class="science-ccon">
                                         <ul>
-                                            <li><a href="/Data/View/246" target="_self" class="">923创新实验室</a></li>
-                                            <li><a href="/Data/View/247" target="_self" class="">并行与分布式系统实验室</a></li>
+                                            <li><a href="" target="_self" class="">923创新实验室</a></li>
+                                            <li><a href="" target="_self" class="">并行与分布式系统实验室</a></li>
                                         </ul>
                                     <div class="science-more">
-                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                        <a href="" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
                                 <!--science-ccone end-->
@@ -493,7 +493,7 @@
                         <div class="science-one col-lg-3 col-md-6 col-sm-6">
                             <div class="science-oneone">
                                 <div class="science-top" cut="0.5em">
-                                    <a href="/Data/List/yjfx" target="_self">
+                                    <a href="" target="_self">
                                         <span>工业软件</span>
                                         <img src="Assets/images/kic2.png" />
                                     </a>
@@ -501,12 +501,12 @@
                                 <!--science-top end-->
                                 <div class="science-ccon">
                                         <ul>
-                                            <li><a href="/Data/View/250" target="_self" class="">信息系统技术实验室</a></li>
-                                            <li><a href="/Data/View/249" target="_self" class="">925实验室</a></li>
-                                            <li><a href="/Data/View/248" target="_self" class="">智能软件工程实验室</a></li>
+                                            <li><a href="" target="_self" class="">信息系统技术实验室</a></li>
+                                            <li><a href="" target="_self" class="">925实验室</a></li>
+                                            <li><a href="" target="_self" class="">智能软件工程实验室</a></li>
                                         </ul>
                                     <div class="science-more">
-                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                        <a href="" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
 
@@ -519,7 +519,7 @@
                         <div class="science-one col-lg-3 col-md-6 col-sm-6">
                             <div class="science-oneone">
                                 <div class="science-top" cut="0.5em">
-                                    <a href="/Data/List/yjfx" target="_self">
+                                    <a href="" target="_self">
                                         <span>数据服务</span>
                                         <img src="Assets/images/kic3.png" />
                                     </a>
@@ -527,11 +527,11 @@
                                 <!--science-top end-->
                                 <div class="science-ccon">
                                         <ul>
-                                            <li><a href="/Data/View/253" target="_self" class="">数据服务实验室</a></li>
-                                            <li><a href="/Data/View/251" target="_self" class="">数字艺术实验室</a></li>
+                                            <li><a href="" target="_self" class="">数据服务实验室</a></li>
+                                            <li><a href="" target="_self" class="">数字艺术实验室</a></li>
                                         </ul>
                                     <div class="science-more">
-                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                        <a href="" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
 
@@ -544,7 +544,7 @@
                         <div class="science-one col-lg-3 col-md-6 col-sm-6">
                             <div class="science-oneone">
                                 <div class="science-top" cut="0.5em">
-                                    <a href="/Data/List/yjfx" target="_self">
+                                    <a href="" target="_self">
                                         <span>独立PI</span>
                                         <img src="Assets/images/kic4.png" />
                                     </a>
@@ -552,13 +552,13 @@
                                 <!--science-top end-->
                                 <div class="science-ccon">
                                         <ul>
-                                            <li><a href="/Data/View/255" target="_self" class="a2">分布式计算与智能信息处理实验室</a></li>
-                                            <li><a href="/Data/View/254" target="_self" class="">自适应分布计算实验室</a></li>
-                                            <li><a href="/Data/View/525" target="_self" class="">529实验室</a></li>
+                                            <li><a href="" target="_self" class="a2">分布式计算与智能信息处理实验室</a></li>
+                                            <li><a href="" target="_self" class="">自适应分布计算实验室</a></li>
+                                            <li><a href="" target="_self" class="">529实验室</a></li>
 
                                         </ul>
                                     <div class="science-more">
-                                        <a href="/Data/List/yjfx" target="_self"><img src="Assets/images/j-more.png" /></a>
+                                        <a href="" target="_self"><img src="Assets/images/j-more.png" /></a>
                                     </div>
                                 </div>
 
