@@ -49,7 +49,7 @@
                 <div class="container">
                     <div class="row">
                         <a href="" class=" logo1">
-                            <img src="Assets/images/logodouble.png" id="img" class="img-responsive">
+                            <img src="Assets/images/logo.png" id="img" class="img-responsive">
                         </a>
                         <a href="#mnmd-offcanvas" class="offcanvas-menu-toggle is-active offcanvas-header-btn js-mnmd-offcanvas-toggle">
                             <img src="Assets/images/unfoldIcon.png" class="iconfont icon-unfold mdicon--last hidden-xs">
@@ -63,7 +63,7 @@
             <div class="mnmd-offcanvas__title">
                 <h2 class="site-logo">
                     <a href="#">
-                        <img src="Assets/images/logodouble.png" alt="">
+                        <img src="Assets/images/logo.png" alt="">
                     </a>
                 </h2>
                 <ul class="social-list list-horizontal">
@@ -134,7 +134,7 @@
         <div class="container container2">
             <div class="row">
                 <div class="logo col-lg-5 col-md-5  animated  fadeInLeft">
-                    <a href=""><img src="Assets/images/logodouble.png" /></a>
+                    <a href=""><img src="Assets/images/logo.png" /></a>
                 </div>
                 <div class="top-tright text-right  col-lg-7 col-md-7 pos animated fadeInRight">
                     <div class="top-trtop">
