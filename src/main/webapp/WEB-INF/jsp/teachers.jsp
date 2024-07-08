@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="row">
                     <a href="" class=" logo1">
-                        <img src="Assets/images/logodouble.png" id="img" class="img-responsive">
+                        <img src="Assets/images/logo.png" id="img" class="img-responsive">
                     </a>
                     <a href="#mnmd-offcanvas" class="offcanvas-menu-toggle is-active offcanvas-header-btn js-mnmd-offcanvas-toggle">
                         <img src="Assets/images/unfoldIcon.png" class="iconfont icon-unfold mdicon--last hidden-xs">
@@ -63,7 +63,7 @@
         <div class="mnmd-offcanvas__title">
             <h2 class="site-logo">
                 <a href="/">
-                    <img src="Assets/images/logodouble.png" alt="">
+                    <img src="Assets/images/logo.png" alt="">
                 </a>
             </h2>
             <ul class="social-list list-horizontal">
@@ -73,7 +73,7 @@
         <div class="mnmd-offcanvas__section mnmd-offcanvas__section-navigation">
             <div id="offcanvas-menu" class="menu-main-menu-container">
                 <ul class="navigation navigation--offcanvas">
-                    <li class="menu-item"><a href="List/HomePage.html" target="_self">首页</a></li>
+                    <li class="menu-item"><a href="index.html" target="_self">首页</a></li>
                     <li class="menu-item menu-item-has-children "><a href="List/HomePage.html" target="_self">专业概况</a>
                         <ul class="sub-menu" style="display: block;">
                             <li class="menu-item"><a target="_self" href="List/HomePage.html">欢迎辞</a></li>
@@ -134,7 +134,7 @@
             <div class="container container2">
                 <div class="row">
                     <div class="logo col-lg-5 col-md-5  animated  fadeInLeft">
-                        <a href=""><img src="Assets/images/logodouble.png" /></a>
+                        <a href=""><img src="Assets/images/logo.png" /></a>
                     </div>
                     <div class="top-tright text-right  col-lg-7 col-md-7 pos animated fadeInRight">
                         <div class="top-trtop">
@@ -144,7 +144,7 @@
                         <div class="wc-menu ">
 
                             <ul>
-                                <li><a href="List/HomePage.html">首页</a></li>
+                                <li><a href="index.html">首页</a></li>
                                 <li><a data-id="" target="_self" href="List/HomePage.html" data-url="">专业概况</a>
                                     <div class="ernav" cut="13em">
                                         <img src="" cut="13em" />
@@ -309,7 +309,7 @@
         <div class="container fbg" cut="55em">
             <div class="row">
                 <div class="f-left col-lg-5 col-md-5 col-sm-5">
-                    <a href=""><img src="Assets/images/logodouble.png" /></a>
+                    <a href=""><img src="Assets/images/logo.png" /></a>
                 </div>
                 <!--f-left end-->
 

@@ -585,7 +585,7 @@
                 <div class="container fbg" cut="55em">
                     <div class="row">
                         <div class="f-left col-lg-5 col-md-5 col-sm-5">
-                            <a href=""><img src="Assets/images/logodouble.png" /></a>
+                            <a href=""><img src="Assets/images/logo.png" /></a>
                         </div>
                         <!--f-left end-->
 
@@ -674,11 +674,6 @@
                 el: '.b-banner .swiper-pagination',
                 clickable: true,
             },
-            //				 navigation: {
-            //			          nextEl: ".banner .swiper-button-next",
-            //			          prevEl: ".banner .swiper-button-prev",
-            //			        },
-
         });
         if (window.innerWidth <= 767) {
             let swiper = new Swiper(".party-ban .swiper-container", {
@@ -796,7 +791,7 @@
                   <div class="layui-input-prefix">
                     <i class="layui-icon layui-icon-username"></i>
                   </div>
-                  <input type="text" name="username" value="" lay-verify="required" placeholder="用户名(测试用例：BO)" lay-reqtext="请填写用户名" autocomplete="off" class="layui-input" lay-affix="clear">
+                  <input type="text" name="username" value="BO" lay-verify="required" placeholder="用户名(测试用例：BO)" lay-reqtext="请填写用户名" autocomplete="off" class="layui-input" lay-affix="clear">
                 </div>
               </div>
               <div class="layui-form-item">
@@ -804,7 +799,7 @@
                   <div class="layui-input-prefix">
                     <i class="layui-icon layui-icon-password"></i>
                   </div>
-                  <input type="password" name="password" value="" lay-verify="required" placeholder="密   码(测试用例：123456)" lay-reqtext="请填写密码" autocomplete="off" class="layui-input" lay-affix="eye">
+                  <input type="password" name="password" value="123456" lay-verify="required" placeholder="密   码(测试用例：123456)" lay-reqtext="请填写密码" autocomplete="off" class="layui-input" lay-affix="eye">
                 </div>
               </div>
               <div class="layui-form-item">
